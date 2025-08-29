@@ -1,0 +1,15 @@
+package WebdriverDemos;
+
+import org.openqa.selenium.WebDriver;
+
+
+public class SA_02LaunchingSafariBrowser {
+
+	public static void main(String[] args) {
+
+		
+		WebDriver driver = new SafariDriver();
+
+	}
+
+}

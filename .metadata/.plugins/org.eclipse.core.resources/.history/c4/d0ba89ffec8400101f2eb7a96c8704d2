@@ -1,0 +1,29 @@
+package WebdriverDemos;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class SA_02_ReadTitle {
+
+	public static void main(String[] args) {
+		WebDriver driver = new ChromeDriver();
+		
+		driver.manage().window().maximize();
+		driver.get("https://www.facebook.com");
+		
+		String pageTitle = driver.getTitle();
+		
+		System.out.println("page Title --> "+ pageTitle);
+		
+		if(pageTitle.equals("Amazon – log in or sign up")) {
+			System.out.println( " testcase passed");
+		} else {
+			System.out.println("testcase failed");
+		}
+		
+		driver.close();
+		
+		
+	}
+	
+}

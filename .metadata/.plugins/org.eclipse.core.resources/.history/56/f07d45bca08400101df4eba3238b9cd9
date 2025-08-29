@@ -1,0 +1,28 @@
+package WebdriverDemos;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+//create an object of webdriver
+		// interfaceClassName objectName = new ClassName();
+		// webdriver driver/nint/sel = new chromeDriver();
+		//cntrl + shift + o from keyboard
+public class SA_01_LaunchBrowser {
+
+	public static void main(String[] args) {
+		
+		WebDriver driver = new ChromeDriver();
+		driver.get("https://google.com");
+		
+		Chromedriver driver1 = new ChromeDriver();
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+
+}
