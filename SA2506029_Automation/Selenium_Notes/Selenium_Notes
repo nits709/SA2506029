@@ -1,5 +1,7 @@
 Nitin Gupta.
 
+GitHub link - https://github.com/nits709/SA2506029
+
 
 Selenuim WebDriver Module no. 3
 total session - 19 sessions.
@@ -219,7 +221,44 @@ total session - 19 sessions.
        Methods of WebDrivers
        1. Launch the browser : 
                Create an object of webdriver interface, browser specific class   chromedriver, safariDriver, FirefoxDriver, OperaDriver.
+       2. driver.manage().window().maximize(); maximized the any browser opened by webdriver object
+       3. Get(): use to launch the any URL over browser
+       4. Close():close the browser window.
+       5. getTitle(): which returns the title of page (String) 
+       6. getCurrentURL(): Which returns the URL of current page (String)
+       7. findElement() : Reads the control of the webpage, locates for the first occurences
+       
+       
+       
+       
+       Common exceptions in Selenium
+       1. InvalidArgumentException : Your URL is in wrong syntax  , url should always starts with
+           (http:// || https://) 
+           
+       2. NoSuchElementException: Selenium is unable to locate the element over page
+       		What are possible reasons
+       		1. The value provide that might be wrong
+       		2. Value of locator dynamic in nature
+       		3. Synchronization issue.     
 
+
+
+		WebElement
+		1. Every Control/Element on the webpage treated as webelement in selenium webdriver.
+		2. WebElement is an interface.
+		3. WebElement can hold any control on the web page.
+		
+		
+		Locators: is addresses/medium through which selenium can reach on them over page.
+		1. Name
+		2. Id
+		3. ClassName
+		4. CssSelector
+		5. Xpath
+		6. Partialtext
+		7. Linktext
+		8. Tagname
+		9. Relative
 
 
 
