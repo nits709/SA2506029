@@ -240,7 +240,7 @@ total session - 19 sessions.
        		1. The value provide that might be wrong
        		2. Value of locator dynamic in nature
        		3. Synchronization issue.     
-
+		3. InvalidSelectorException: The value of locator is in wrong format.
 
 
 		WebElement
@@ -260,11 +260,41 @@ total session - 19 sessions.
 		8. Tagname
 		9. Relative
 
+		CSSSelector : This is locators which help selenium to
+					  reads the element by using 1 or multiple attributes
+					 format --> tagname[attribute='value'] 
+		types:
+		 	1. Single Attribtue : tagname[attribute='value']
+		 	    example: facebook | GMAIL -> input[name='firstName']
+		 	    1. input[id='email']
+		 	    2. input[name='pass']
+		 	
+		 	2. Multiple Attributes :  tagname[attribute='value'][attribute='value']
+		 		example facebook
+		 		1. input[id='email'][data-testid='royal-email']
+		 		2. input[type='password'][id='pass']
+		 	    
+		 	3.Special characters 
+		 		1. ^ - Starts with input[id^='email_']
+		 		2. $ - Ends with
+		 		3. * - contains
+		 		4. . (Homework)
+		 		5  # (Homework)   
+		 	    
+		 						  
+		format CSS - tagname[attribute='value']
+		
+		special character will gonna applicable only on attribute value
+		
+		input[id='email_0123'] (if ending part of value is dynamic in nature)
+		
 
 
 
-
-
+	**How selenium webdriver reads the element over webpage
+	1. selenium reads the element from left to right
+	2. and line by line 
+	
 
 
 

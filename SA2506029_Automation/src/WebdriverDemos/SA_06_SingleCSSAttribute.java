@@ -1,0 +1,39 @@
+package WebdriverDemos;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class SA_06_SingleCSSAttribute {
+	
+	public static void main(String[] args) {
+		WebDriver driver = new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.get("https://www.facebook.com/");
+		
+		
+		WebElement username = driver.findElement(By.cssSelector("input[id='email']"));
+		username.sendKeys("nitin@yopmail.com");
+		
+		WebElement password = driver.findElement(By.cssSelector("input[name='pass']"));
+		password.sendKeys("Smart@123");
+		
+		driver.findElement(By.cssSelector("button[name='login']")).click();
+		
+		
+		try {
+			Thread.sleep(2000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		driver.close();
+		
+		
+		
+		
+	}
+
+}

@@ -1,0 +1,36 @@
+package WebdriverDemos;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class SA_08_Multiple_Approach {
+
+	public static void main(String[] args) {
+
+		WebDriver driver = new ChromeDriver();
+
+		driver.manage().window().maximize();
+
+		driver.get("https://www.facebook.com/");
+		
+		
+		
+		WebElement username = driver.findElement(By.className(""));
+		username.isDisplayed();
+		username.click();
+		
+		
+		
+		driver.findElement(By.className("")).isDisplayed();
+		driver.findElement(By.className("")).click(); 		
+		
+		
+driver.findElement(By.cssSelector("class='_42ft _4jy0 _6lth _4jy6 _4jy1 selected _51sy'\n"
+		+ "button[class=\"_51sy\"][name='login']"));
+		
+		
+
+	}
+}
