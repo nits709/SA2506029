@@ -1,0 +1,119 @@
+What is an Xpath?
+its an xml path of the tagname and its attributes
+
+Types of xpath
+1. absolute xpath | 
+2. Relative xpath |  //tagname[@attribute='value'] -- current location of the element
+
+absolute xpath | Full Xpath
+root tag -> html/
+SignIn text --> html/body/div/main/div/div/div/h1 - 1000  | //h1[@class='header__content__heading ']
+Email Field --> 
+
+		html/body/div/main/div/div/form/div/input   -- Email
+		html/body/div/main/div/div/form/div/input  -- password
+
+-------------------------------------------------------------------------------
+		html/body/div/main/div/div/form/div[1]/input - email
+		//input[@id='username'] | 
+		html/body/div/main/div/div/form/div[2]/input - password
+		html/body/div/main/div/div/form/div[3]/input - checkbox
+
+Facebook - email Field 
+	html/body/div/div/div/div/div/div/div[2]/div/div/form/div/div/input
+
+
+
+India > Maha > pune > Kharadi > phase 2 > Ivyestate > floor > flatno.
+
+India > Maha > Pune > railways station > floor > flat no.
+
+India > Maha > Pune > viman nagar > airport > floor > flat no.
+
+
+
+India > Hyderbad > Lingampalli > bhel > phase 2 > XXX > floor > flatno.
+
+
+
+
+Grandpa (html)
+ └── Parent (body)
+      ├── Child1 (div[1])
+      │    └── Grandchild1 (button[1])
+      └── Child2 (div[2])
+           ├── Grandchild2 (input[1])
+           └── Grandchild3 (span[1])
+           
+           
+           
+Grandparent (html)
+ └── Parent1 (body)
+      ├── Child1 (div[1])
+      │     ├── Grandchild1 (span[1])
+      │     └── Grandchild2 (span[2])
+      └── Parent2 (div[2])
+            ├── Child2 (div[1])
+            │     └── Child2 (span[1])
+            └── Child3 (div[2])
+                  ├── Grandchild4 (span[1])
+                  └── Grandchild5 (span[2])
+ 
+                  
+  Grandparent > Parent1 >  Parent2  > Child2  > Child2     
+  
+  
+  GreatGrandpa (html)
+ └── Grandpa1 (body)
+      ├── Dad (div[1])
+      │     ├── Me (div[1])
+      │     │     ├── Son1 (span[1])
+      │     │     ├── Son2 (span[2])
+      │     │     └── Son3 (span[3])
+      │     └── Daughter1 (div[2])
+      │           └── Granddaughter1 (span[1])
+      └── Uncle (div[2])
+            ├── Cousin1 (div[1])
+            │     ├── SonCousin1 (span[1])
+            │     └── DaughterCousin1 (span[2])
+            └── Cousin2 (div[2])
+                  ├── SonCousin2 (span[1])
+                  └── DaughterCousin2 (span[2])
+
+GreatGrandpa > Grandpa1 > Uncle > Cousin1 > DaughterCousin1
+
+GreatGrandpa > Grandpa1 > Uncle > Cousin1 > SonCousin1
+
+
+html > body > div[2] > div [1] > span[2]
+
+
+
+
+
+GreatGrandpa (html)
+ └── Grandpa1 (body)
+      ├── Dad1 (div[1])
+      │     ├── Me (div[1])
+      │     │     ├── Son1 (span[1])
+      │     │     └── Daughter1 (span[2])
+      │     └── Daughter2 (div[2])
+      │           └── Granddaughter1 (span[1])
+      ├── Uncle1 (div[2])
+      │     ├── Cousin1 (span[1])
+      │     └── Cousin2 (span[2])
+      ├── Uncle2 (div[3])
+      │     ├── Cousin3 (span[1])
+      │     └── Cousin4 (span[2])
+      └── Uncle3 (div[4])
+            ├── Cousin5 (span[1])
+            └── Cousin6 (span[2])
+        
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                             

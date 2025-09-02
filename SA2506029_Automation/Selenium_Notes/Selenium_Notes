@@ -227,6 +227,7 @@ total session - 19 sessions.
        5. getTitle(): which returns the title of page (String) 
        6. getCurrentURL(): Which returns the URL of current page (String)
        7. findElement() : Reads the control of the webpage, locates for the first occurences
+       8. getText(): Reads the text of element over webpage (this function works only if text is present within html tags)(String)
        
        
        
@@ -252,7 +253,7 @@ total session - 19 sessions.
 		Locators: is addresses/medium through which selenium can reach on them over page.
 		1. Name
 		2. Id
-		3. ClassName
+		3. ClassName : only one attribute value can pass at a time
 		4. CssSelector
 		5. Xpath
 		6. Partialtext
@@ -288,7 +289,8 @@ total session - 19 sessions.
 		
 		input[id='email_0123'] (if ending part of value is dynamic in nature)
 		
-
+	Notes: for css | user need to pass fully qualified attribute name
+		   input[class='inputtext _55r1 _6luy _9npi']
 
 
 	**How selenium webdriver reads the element over webpage
