@@ -1,0 +1,16 @@
+package WebdriverDemos;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class baseFunction {
+
+	
+	public static WebDriver driver = null;
+	public void launchBrowser(String browserName) {
+		
+		 driver = new ChromeDriver();
+		driver.manage().window().maximize();
+		
+	}
+}

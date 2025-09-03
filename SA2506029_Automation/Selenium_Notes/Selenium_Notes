@@ -252,7 +252,7 @@ total session - 19 sessions.
 		
 		Locators: is addresses/medium through which selenium can reach on them over page.
 		1. Name
-		2. Id
+		2. Id - 
 		3. ClassName : only one attribute value can pass at a time
 		4. CssSelector
 		5. Xpath
@@ -296,6 +296,26 @@ total session - 19 sessions.
 	**How selenium webdriver reads the element over webpage
 	1. selenium reads the element from left to right
 	2. and line by line 
+	
+	
+	Handling Dropdown
+	1. If the element have select tagname then only then selenium treated as dropdown.
+	2. For handling a dropdown selenium having a special class is called select class.
+	3. BootStraps Dropdrown cannot automate via Select class.
+	
+	What all operations i can do with select class or dropdown.
+	1. display the total no. of city from DD - 248 value
+	2. Display firstSelectedOption (default value)
+	3. Display name of each options
+	4. Select the option (value from dropdown)
+	
+	Select class
+		1. getFirstSelectedOption - return the default value of dropdown. (WebElement)
+		2. getOptions - returns all options from dd (WebElement)
+		3. how many way can select value from DD using select class
+		   1. By using visible Text (text present in between the opening and closing tags)
+		   2. By using value  (attribtue this could be a number or string)
+		   3. By using index
 	
 
 

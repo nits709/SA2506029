@@ -1,0 +1,10 @@
+package WebdriverDemos;
+
+public class SA_17_checkboxScenario {
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}

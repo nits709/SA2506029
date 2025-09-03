@@ -1,0 +1,65 @@
+package WebdriverDemos;
+
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.Select;
+
+public class SA19_handleDropdwonWithSelectClass extends baseFunction {
+
+	public static void main(String[] args) {
+		launchBrowser("chrome");
+		launchURL("https://register.rediff.com/register/register.php?FormName=user_details");
+
+		WebElement countryDD = driver.findElement(By.id("country"));
+		Select countryDropdown = new Select(countryDD);
+
+		// all operations can be performed vis countryDowndown only.
+
+		System.out.println("getting firstSelectDropdownValue -> " + countryDropdown.getFirstSelectedOption().getText());
+
+		System.out.println("Getting text based on index " + countryDropdown.getOptions().get(0).getText());
+		System.out.println("Getting text based on index " + countryDropdown.getOptions().get(20).getText());
+		System.out.println("Getting text based on index " + countryDropdown.getOptions().get(10).getText());
+
+		List<WebElement> allDDOptions = countryDropdown.getOptions();
+		System.out.println("Total no. of options size in dd " + allDDOptions.size());
+
+		for (WebElement DDOptions : allDDOptions) {
+			System.out.println("text " + DDOptions.getText());
+		}
+		
+		
+		// selecting the value by using visible text
+		
+		countryDropdown.selectByVisibleText("Canada");
+		
+		sleep();
+		
+		
+		countryDropdown.selectByValue("83")
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+
+		driver.close();
+	}
+
+}
