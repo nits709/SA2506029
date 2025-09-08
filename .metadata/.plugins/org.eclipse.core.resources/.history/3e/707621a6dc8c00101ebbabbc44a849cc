@@ -64,13 +64,7 @@
 	g.	Click on Search Buses button
 	h.	Display the name of 1st Bus from the list
 	
-12. https://www.redbus.in/ with explicit and fluent wait.
-13. 	Open https://www.facebook.com/
-	a.	Enter valid user name as test@gmail.com  (Use Relative Locator)
-	b.	Enter invalid password (Use Relative Locator)
-	c.	Click on Login button (Use Relative Locator)
-14. Open https://www.chabadpotomac.com/templates/articlecco_cdo/aid/6617538/jewish/Hebrew-School-New-Student.htm
-   a. automation radio button  	- Hebrew Reading Proficiency	
+12. https://www.redbus.in/ with explicit and fluent wait.	
 	
 	
 	
