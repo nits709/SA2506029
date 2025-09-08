@@ -1,0 +1,33 @@
+package WebdriverDemos;
+
+public class sample extends baseFunction {
+	launchBrowser("Chrome");
+
+	launchURL("https://www.redbus.in/");
+
+	driver.findElement(By.xpath("//*[@id='root']/div[2]/div/div[2]/div/div/div[1]/div[1]")).click();
+	driver.findElement(By.id("srcDest")).sendKeys("Kolh");
+	Thread.sleep(5000);
+	driver.findElement(By.xpath(
+			"/html/body/div[1]/div[2]/div/div[2]/div/div/div[1]/div[1]/div[1]/div[2]/div[4]/div[1]/div[5]/div[1]/div/div[1]"))
+			.click();
+
+	sleep();
+
+	driver.findElement(By.xpath("//*[@id='root']/div[2]/div/div[2]/div/div/div[1]/div[2]")).click();
+	driver.findElement(By.xpath("//input[@id='srcDest']")).sendKeys("Bhop");
+	driver.findElement(By.xpath(
+			"/html/body/div[1]/div[2]/div/div[2]/div/div/div[1]/div[2]/div[2]/div[4]/div[1]/div[3]/div[1]/div/div[1]"))
+			.click();
+
+	driver.findElement(By.xpath("//*[@id='root']/div[2]/div/div[2]/div/div/div[1]/div[3]/div[1]/i")).click();
+	driver.findElement(By.xpath(
+			"//span[normalize-space()='10']"))
+			.click();
+
+	
+	driver.findElement(By.xpath("//*[@id='root']/div[2]/div/div[2]/div/button")).click();
+	Thread.sleep(5000);
+	System.out.println(driver.findElement(By.xpath("//*[@id=\"40289231\"]/div[1]/div[3]/div/div[1]/div[1]")).getText());
+	driver.close();
+}

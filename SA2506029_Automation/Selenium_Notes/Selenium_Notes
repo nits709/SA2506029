@@ -317,6 +317,31 @@ total session - 19 sessions.
 		   2. By using value  (attribtue this could be a number or string)
 		   3. By using index
 	
+	
+	
+	Synchronization (Waits in selenium)
+	Synchronization is the process of adjusting the speed of tool with speed of application.
+	
+	
+	Methods to use incase of synchronization issues.
+	1. Thread.sleep();
+			a. pauses the entire execution for give time period.
+			b. it is applicable for single statement only.
+			c. Mandatory delay (it takes mandatory delay 2,3,)
+	2. implicit wait (dynamic waits)
+			a. It doesn't take mandatory delay (if elements loaded with 2 second then it will not wait till the time is completed.)
+			b. default polling interval: 500 ms .5 seconds
+			c. Only checks the existence of an element in DOM (present in DOM)
+			d. Applies : driver.findElement and driver.findElements
+			e. Stops early : yes, if element founds before timeout. 
+			f. Exception Ignored in give time period : NOSuchElementException. 	
+	3. ExplicitWait (WebDriver Wait)
+			a. It doesn't take mandatory delay (if elements loaded with 2 second then it will not wait till the time is completed.)
+			b. default polling interval: 500 ms .5 seconds
+			c. it checks the existence along with condition (state of an element) use by tester
+	4. FluentWait
+			
+	5. PageLoadTimeOut
 
 
 

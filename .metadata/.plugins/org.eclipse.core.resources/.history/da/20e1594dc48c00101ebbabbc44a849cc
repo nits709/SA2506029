@@ -1,0 +1,32 @@
+package WebdriverDemos;
+
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.Select;
+
+public class SA20_HandlingMultipleSelectDropdown extends baseFunction {
+
+	// select[id='multiselect1'], [id='multiselect1'], #multiselect1
+	public static void main(String[] args) {
+		launchBrowser("chrome");
+		launchURL("https://omayo.blogspot.com/");
+
+		WebElement listBox = driver.findElement(By.cssSelector("select[id='multiselect1']"));
+
+		Select dd = new Select(listBox);
+		List<WebElement> carBox = dd.getOptions();
+		System.out.println("Total No of cars --> " + carBox.size()); // return me total no of options present in multi select DD
+		
+		
+		dd.selectByIndex(0); //Volvo
+		dd.selectByIndex(2); // hyundai
+		
+		sleep();
+		
+		driver.close();
+
+	}
+
+}

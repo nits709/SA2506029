@@ -1,0 +1,10 @@
+package WebdriverDemos;
+
+public class A21_SynchronizationwithImplicitWait {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

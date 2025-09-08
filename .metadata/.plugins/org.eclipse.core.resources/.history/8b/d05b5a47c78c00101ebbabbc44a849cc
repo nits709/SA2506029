@@ -1,0 +1,26 @@
+package Assignments;
+
+import org.openqa.selenium.By;
+
+import WebdriverDemos.baseFunction;
+
+public class A_05_RedBus extends baseFunction {
+
+	public static void main(String[] args) {
+		launchBrowser("chrome");
+		launchURL("https://www.redbus.in/");
+
+		// SourceElement
+		driver.findElement(By.xpath("//*[@id=\"root\"]/div[3]/div/div[2]/div/div/div[1]/div[1]")).click();
+		driver.findElement(By.id("srcDest")).sendKeys("Kolh");
+		driver.findElement(By.xpath(
+				"/html/body/div[1]/div[3]/div/div[2]/div/div/div[1]/div[1]/div/div[2]/div[4]/div[1]/div[3]/div[1]/div/div[1]"))
+				.click();
+		
+		//ToElement
+		driver.findElement(By.xpath("//*[@id=\"root\"]/div[3]/div/div[2]/div/div/div[1]/div[2]")).click();
+		driver.findElement(By.id("srcDest")).sendKeys("Bho");
+		driver.findElement(By.xpath("/html/body/div[1]/div[3]/div/div[2]/div/div/div[1]/div[2]/div[2]/div[4]/div[1]/div[7]/div[1]/div/div[1]")).click();
+	}
+
+}
