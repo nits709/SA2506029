@@ -1,0 +1,10 @@
+package WebdriverDemos;
+
+public class SA23_HandlingWebTable extends baseFunction {
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}

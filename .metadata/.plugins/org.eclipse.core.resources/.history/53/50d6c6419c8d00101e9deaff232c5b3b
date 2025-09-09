@@ -1,0 +1,10 @@
+package WebdriverDemos;
+
+public class SA24_HandlingAlertInSeleniumWebDriver {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,5 +1,7 @@
 package WebdriverDemos;
 
+import java.time.Duration;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -24,7 +26,9 @@ public class baseFunction {
 	}
 
 	public static void launchURL(String appURL) {
-		driver.get(appURL);
+		driver.get(appURL); //30 seconds waits
+		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(30));
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 	}
 
 	public static void sleep() {

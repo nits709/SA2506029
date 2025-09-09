@@ -242,6 +242,7 @@ total session - 19 sessions.
        		2. Value of locator dynamic in nature
        		3. Synchronization issue.     
 		3. InvalidSelectorException: The value of locator is in wrong format.
+		4. PageLoadTimeOutException: If targeted url is not getting loaded in given time period.
 
 
 		WebElement
@@ -344,16 +345,32 @@ total session - 19 sessions.
 	5. PageLoadTimeOut
 
 
+	//*[@id="root"]/div[3]/div/div[2]/div/div/div[1]/div[1]/div/div[2]/div[4]/div[1]/div[5]/div[1]/div/div[1]
+
+	//*[@id="root"]/div[3]/div/div[2]/div/div/div[1]/div[1]/div/div[2]/div[4]/div[1]/div[7]/div[1]/div/div[1]
 
 
+	relative xpath - //tagname[@attribute='value']
+	this would return 1column value of 1st row ----> //table[@class='dataTable']/tbody/tr/td/a
+	this would return me total no. of rows in webtable -> //table[@class='dataTable']/tbody/tr - 331
+	this would return me total no. of column present inside each row --> //table[@class='dataTable']/tbody/tr[1]/td - 6
 
 
-
-
-
-
-
-
+    Alert in selenium 
+    Alert is an interface in the selenium webdriver (special class of webdriver)
+    1. Alert is part of the browser
+    2. until user input, user cannot access rest of the application.
+    3. type of alerts
+    		1. simple
+    		2. confirmation
+    		3. prompt
+    		
+    4. How to automate alert in selenium .
+    		a. Methods of alert interface.
+    			1. switchto();
+    			2. accept();  -- for ok button
+    			3. dismiss(); -- for cancel button
+    			4. getText() -- return the text present on alert (String)	
 
 
 
