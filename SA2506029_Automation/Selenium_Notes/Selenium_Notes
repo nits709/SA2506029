@@ -243,6 +243,8 @@ total session - 19 sessions.
        		3. Synchronization issue.     
 		3. InvalidSelectorException: The value of locator is in wrong format.
 		4. PageLoadTimeOutException: If targeted url is not getting loaded in given time period.
+		5. ElementClickInterceptException: occur when targeted element gets hidden by another element.
+										to overcome user javascript function arguments[0].click
 
 
 		WebElement
@@ -361,16 +363,22 @@ total session - 19 sessions.
     1. Alert is part of the browser
     2. until user input, user cannot access rest of the application.
     3. type of alerts
-    		1. simple
+    		1. simple  --> only accepts the alert -- by clicking on ok button
     		2. confirmation
-    		3. prompt
+    		3. prompt (Input box/ normal)    		
+    driver - > browser --> application --> click (Element) --> alert 
     		
     4. How to automate alert in selenium .
     		a. Methods of alert interface.
     			1. switchto();
     			2. accept();  -- for ok button
     			3. dismiss(); -- for cancel button
-    			4. getText() -- return the text present on alert (String)	
+    			4. getText() -- return the text present on alert (String)
+    			5. sendKeys()  allows user to enter text into prompt alert.	
+    			
+    
+    javascriptExecutor : javascriptExecutor is an interface in selenium.
+    					This accepts 2 parameter 1. method name, 2 element			
 
 
 

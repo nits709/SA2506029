@@ -65,10 +65,12 @@
 	h.	Display the name of 1st Bus from the list
 	
 12. https://www.redbus.in/ with explicit and fluent wait.
+
 13. 	Open https://www.facebook.com/
 	a.	Enter valid user name as test@gmail.com  (Use Relative Locator)
 	b.	Enter invalid password (Use Relative Locator)
 	c.	Click on Login button (Use Relative Locator)
+	
 14. Open https://www.chabadpotomac.com/templates/articlecco_cdo/aid/6617538/jewish/Hebrew-School-New-Student.htm
    a. automation radio button  	- Hebrew Reading Proficiency
    
@@ -80,7 +82,31 @@
  
 17. Open Google.co.in
 	a. enter any search string "Selenium Webdriver"
-	b. print list of suggestions in console by using xpath.   
+	b. print list of suggestions in console by using xpath.  
+	
+18. Open https://demoqa.com/alerts	 
+    a. automate alert no. 3 "On button click, confirm box will appear"
+    b. click on ok button and validate the response
+    c. click on cancel button and validate the response.
+ 
+19.	Open a webpage that has a link to open a new tab or window (e.g., https://demoqa.com/browser-windows).
+	Click the Alert,Frame & Windows
+	Click on Browser Window
+	Write an automation scripts to handle window on 
+		1. New Tab  - get and print message from tab
+		2. New Window - get and print message from window
+		3. New Window Message.	- get and print message from window	
+		
+20. navigate to https://omayo.blogspot.com/ and automate all alert related scenario.
+21. Navigate to https://omayo.blogspot.com/		
+    a. Click on Selenium Tutorial link.
+    b. get the title
+    c. Click on  check our youtube channel.
+    d. get validate youtube window title.		
+		   
+	
+	
+	
 	
 	
 	

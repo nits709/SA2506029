@@ -1,0 +1,11 @@
+package WebdriverDemos;
+
+public class SA26_HandlingPromptAlert extends baseFunction{
+	
+	
+	public static void main(String[] args) {
+		
+		launchBrowser("chrome");
+	}
+
+}

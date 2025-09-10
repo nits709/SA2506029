@@ -1,0 +1,11 @@
+package WebdriverDemos;
+
+public class SA27_HandlingNavigationFunctions extends baseFunction{
+
+	
+	
+	public static void main(String[] args) {
+		
+		launchBrowser("chrome");
+	}
+}

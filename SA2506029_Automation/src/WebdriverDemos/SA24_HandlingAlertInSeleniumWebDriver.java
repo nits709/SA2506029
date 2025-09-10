@@ -1,24 +1,24 @@
 package WebdriverDemos;
 
-import java.time.Duration;
-
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
+import org.openqa.selenium.JavascriptExecutor;
 
 public class SA24_HandlingAlertInSeleniumWebDriver extends baseFunction {
 
 	public static void main(String[] args) {
 		launchBrowser("chrome");
 		launchURL("https://demoqa.com/alerts");
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		//WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 
-		Alert alt;
+		Alert alt;  // interface , i have create reference
 
+		JavascriptExecutor js = (JavascriptExecutor) driver;
 		// simple alert function.
-		driver.findElement(By.id("alertButton")).click();
-		wait.until(ExpectedConditions.alertIsPresent());
+		//argument[0] - it maching and filter techn. to identify the element over page.
+		js.executeScript("arguments[0].click();", driver.findElement(By.id("alertButton")));
+		//driver.findElement(By.id("alertButton")).click();
+		//wait.until(ExpectedConditions.alertIsPresent());
 
 		alt = driver.switchTo().alert();
 

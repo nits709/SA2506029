@@ -1,0 +1,16 @@
+package WebdriverDemos;
+
+import org.openqa.selenium.By;
+
+public class Sa28_HandlingFileUploading extends baseFunction{
+	
+	
+	static String filePath = "/Volumes/Renuka/Professional Stuff (Restricted)/Session_material/Reference_SeleniumNoteMaterials/Picture 1.png";
+	public static void main(String[] args) {
+		
+		launchBrowser("chrome");
+		launchURL("https://demoqa.com/automation-practice-form");
+		driver.findElement(By.id("uploadPicture")).sendKeys(filePath);
+	}
+
+}

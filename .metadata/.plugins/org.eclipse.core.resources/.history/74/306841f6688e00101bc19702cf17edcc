@@ -1,0 +1,35 @@
+package WebdriverDemos;
+
+import java.util.Iterator;
+import java.util.Set;
+
+import org.openqa.selenium.By;
+
+public class SA29_HandlingMultipleTab_Windows extends baseFunction {
+
+	public static void main(String[] args) {
+		
+		launchBrowser("chrome");
+		launchURL("https://www.naukri.com/");
+		
+		//clicks on MNC link
+		driver.findElement(By.xpath("//*[@id='trending-naukri-wdgt']/div/div[1]/a[2]")).click();
+		
+		Set<String> windows = driver.getWindowHandles(); // would return the id  of all opened tab or window during single session
+		Iterator<String> it =windows.iterator();
+		
+		String mainWindow = it.next(); // id of mainwindow
+		String childWindow = it.next(); // id of childwindow
+		
+		
+		//capture MNC page Title
+		System.out.println("Page Title " +driver.getTitle()); // child window
+		
+		
+		
+		//clicks on Login Slider element
+		driver.findElement(By.xpath("//*[@id='login_Layer']")).click();  // child window
+
+	}
+
+}
