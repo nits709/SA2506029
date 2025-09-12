@@ -1,0 +1,25 @@
+package Assignments;
+
+import java.util.Iterator;
+import java.util.Set;
+
+import org.openqa.selenium.By;
+
+import WebdriverDemos.baseFunction;
+
+public class A_06_WindowHandle extends baseFunction {
+	
+	
+	public static void main(String[] args) {
+		
+		launchBrowser("chrome");
+		launchURL("https://omayo.blogspot.com/");
+		
+		//clicks on MNC link
+		driver.findElement(By.id("#selenium143")).click();
+		
+		Set<String> windows = driver.getWindowHandles(); // would return the id  of all opened tab or window during single session
+		Iterator<String> it =windows.iterator();
+	}
+
+}

@@ -1,0 +1,31 @@
+package Assignments;
+
+import java.util.Iterator;
+import java.util.Set;
+
+import org.openqa.selenium.By;
+
+import WebdriverDemos.baseFunction;
+
+public class A_21_MultipleWindow extends baseFunction {
+
+	public static void main(String[] args) {
+		launchBrowser("chrome");
+		launchURL("https://omayo.blogspot.com/");
+
+		driver.findElement(By.id("selenium143")).click();
+
+		Set<String> window = driver.getWindowHandles();
+
+		Iterator<String> windowHandles = window.iterator();
+		String mainWindow = windowHandles.next();
+		String childWindow = windowHandles.next();
+		
+		System.out.println("Main WindowId "+ mainWindow + " : "+ "Child WindowId "+ childWindow);
+		
+		//driver.close();
+		driver.quit();
+
+	}
+
+}

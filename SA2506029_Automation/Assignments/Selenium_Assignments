@@ -102,7 +102,11 @@
     a. Click on Selenium Tutorial link.
     b. get the title
     c. Click on  check our youtube channel.
-    d. get validate youtube window title.		
+    d. get validate youtube window title.
+
+22.  https://www.istqb.in/
+    a. Get the text of each link present under menu and prnt on console.    		
+
 		   
 	
 	

@@ -240,7 +240,8 @@ total session - 19 sessions.
        		What are possible reasons
        		1. The value provide that might be wrong
        		2. Value of locator dynamic in nature
-       		3. Synchronization issue.     
+       		3. Synchronization issue.   
+       		4. Element could be presented inside Iframe.  
 		3. InvalidSelectorException: The value of locator is in wrong format.
 		4. PageLoadTimeOutException: If targeted url is not getting loaded in given time period.
 		5. ElementClickInterceptException: occur when targeted element gets hidden by another element.
@@ -378,7 +379,32 @@ total session - 19 sessions.
     			
     
     javascriptExecutor : javascriptExecutor is an interface in selenium.
-    					This accepts 2 parameter 1. method name, 2 element			
+    					This accepts 2 parameter 1. method name, 2 element	
+    					
+    					
+    Iframe:
+    	1. Website -> iframe  -> element
+    		Driver -> URL -> switchTo -> iframe -> element
+    	
+    	2. Website --> 
+    			1. Iframe - 1  -> Element -1
+    			2. Iframe - 2--> Element - 2
+    		
+    	Driver -> URl > SwitchTo ->  Iframe1 -> Element1	
+    	go back to main page --> SwitchTo ->  Iframe2 -> Element2
+    	
+    	
+    	3. Website -->  ParentIframe1  -> Element --> Child1Iframe --> Element
+    					  --> Child2Iframe --> Element 
+ 
+    			
+    	
+    	
+    		
+    			
+    			
+    			
+    										
 
 
 

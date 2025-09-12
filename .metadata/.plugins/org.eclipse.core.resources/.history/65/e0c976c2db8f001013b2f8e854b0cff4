@@ -1,0 +1,80 @@
+package WebdriverDemos;
+
+import java.util.Set;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+
+public class SA29_HandlingMultipleTab_Windows extends baseFunction {
+
+	public static void main(String[] args) throws InterruptedException {
+		
+		launchBrowser("chrome");
+		launchURL("https://www.naukri.com/");
+		
+		//clicks on MNC link
+		driver.findElement(By.xpath("//*[@id='trending-naukri-wdgt']/div/div[1]/a[2]")).click();
+		
+		 String mainWindow = driver.getWindowHandle();
+		Set<String> windows = driver.getWindowHandles(); // would return the id  of all opened tab or window during single session
+//		Iterator<String> it =windows.iterator();
+//		
+//		String mainWindow = it.next(); // id of mainwindow
+//		String childWindow = it.next(); // id of childwindow
+//		
+//		
+//		System.out.println("mainWindow ID "+ mainWindow);
+//		System.out.println("childWindow ID "+ childWindow);
+//		
+//		
+//		driver.switchTo().window(childWindow);
+//		
+//		Thread.sleep(5000);
+		
+		  String childWindow = null;
+          for (String h : windows) {
+              if (!h.equals(mainWindow)) {
+                  childWindow = h;
+                  break;
+              }
+          }
+
+          // 5. Switch to child window
+          driver.switchTo().window(childWindow);
+
+          // 6. Extract text via JavaScript (works even if <body> not present)
+          JavascriptExecutor js = (JavascriptExecutor) driver;
+          String message = (String) js.executeScript("return document.documentElement.innerText;");
+
+		//capture MNC page Title
+		System.out.println("Child Page Title " +driver.getTitle()); // child window
+		
+		
+		
+		//clicks on Login Slider element
+		driver.findElement(By.xpath("//*[@id='login_Layer']")).click();  // child window
+		
+		
+		driver.switchTo().window(mainWindow);
+		
+		
+		System.out.println("page title of parent window -" + driver.getTitle());
+		
+		
+		
+		
+		driver.quit(); // quit will close all opened window during single session.
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+
+	}
+
+}

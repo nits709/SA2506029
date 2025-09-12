@@ -1,0 +1,15 @@
+package WebdriverDemos;
+
+import org.openqa.selenium.By;
+
+public class SA30 extends baseFunction{
+
+	
+	
+	public static void main(String[] args) {
+		launchBrowser("chrome");
+		launchURL("https://www.istqb.in/");
+		
+		driver.findElement(By.xpath("//*[@id=\"sp-menu\"]/div/nav/ul/li[6]/div/div/ul/li[4]/a")).click();
+	}
+}

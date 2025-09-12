@@ -1,0 +1,41 @@
+package Assignments;
+
+import java.util.List;
+
+import org.openqa.selenium.Alert;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
+
+import WebdriverDemos.baseFunction;
+
+public class sample extends baseFunction{
+
+	// contextClick -- would make right click on element
+	public static void main(String[] args) {
+		launchBrowser("chrome");
+		launchURL("https://jqueryui.com/droppable/");
+		Actions act = new Actions(driver);
+
+		driver.findElement(By.linkText("Slider")).click();
+
+		driver.switchTo().frame(0);
+
+		WebElement sliderElement = driver.findElement(By.xpath("//*[@id='slider']/span"));
+
+		System.out.println("dimnesion " + sliderElement.getSize());
+
+		System.out.println("location of x" + sliderElement.getLocation().x); // default location of x axis
+		System.out.println("location of y" + sliderElement.getLocation().y);
+
+		act.dragAndDropBy(sliderElement, sliderElement.getLocation().x + 500, sliderElement.getLocation().y).build()
+				.perform();
+		
+		System.out.println("location of x" + sliderElement.getLocation().x); // update offset of x axis.
+
+	}
+
+}
+
+	
+}
