@@ -1,0 +1,12 @@
+package TestngDemo;
+
+import WebdriverDemos.baseFunction;
+
+public class TNG_01_firstScript extends baseFunction{
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

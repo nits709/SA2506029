@@ -1,0 +1,24 @@
+package TestngDemo;
+
+import WebdriverDemos.baseFunction;
+
+public class TNG_01_firstScript extends baseFunction{
+	
+	// testng doesn't have main function.
+	
+	@Test
+	public void testA() {
+		System.out.println("TestA");
+	}
+	
+	public void testB() {
+		System.out.println("TestB");
+	}
+	
+	public void testC() {
+		System.out.println("TestC");
+	}
+
+	
+
+}

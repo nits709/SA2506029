@@ -1,0 +1,33 @@
+package WebdriverDemos;
+
+import org.openqa.selenium.Alert;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
+
+public class SA33_Action_Event_DoubleClick extends baseFunction {
+
+	public static void main(String[] args) {
+
+		launchBrowser("chrome");
+		launchURL("https://demo.guru99.com/test/simple_context_menu.html");
+		Actions act = new Actions(driver);
+		Alert alt ;
+
+		WebElement doubleClick = driver.findElement(By.xpath("//*[@id='authentication']/button"));
+		//act.moveToElement(doubleClick).doubleClick().build().perform();
+		
+		
+		act.doubleClick(doubleClick).build().perform();
+		
+		System.out.println("Alerttext "+ driver.switchTo().alert().getText());
+		
+		driver.switchTo().alert().accept();
+		
+		
+		sleep();
+		
+		quitDriver();
+	}
+
+}

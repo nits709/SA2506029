@@ -1,0 +1,33 @@
+package TestngDemo;
+
+public class TNG_02_Priority {
+	
+	
+	public void setupBrowser() {
+		System.out.println("Launch browser");
+	}
+	
+	
+	
+	public void setupAppURL() {
+		System.out.println("Launch URL");
+	}
+	
+	
+	public void registeration() {
+		System.out.println("register done");
+	}
+	
+	
+	public void login() {
+		System.out.println("login done.....");
+	}
+	
+	
+	public void CloseBrowser() {
+		System.out.println("browserClose");
+	}
+	
+	
+
+}
