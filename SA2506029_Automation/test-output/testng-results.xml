@@ -1,33 +1,69 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-09-15T22:30:28 IST" name="Default suite" finished-at="2025-09-15T22:30:28 IST" duration-ms="81">
+  <suite started-at="2025-09-16T22:26:51 IST" name="Default suite" finished-at="2025-09-16T22:27:06 IST" duration-ms="14738">
     <groups>
     </groups>
-    <test started-at="2025-09-15T22:30:28 IST" name="Default test" finished-at="2025-09-15T22:30:28 IST" duration-ms="81">
-      <class name="TestngDemo.TNG_02_Priority">
-        <test-method signature="setupBrowser()[pri:1, instance:TestngDemo.TNG_02_Priority@1ea9f6af]" started-at="2025-09-15T22:30:28 IST" name="setupBrowser" finished-at="2025-09-15T22:30:28 IST" duration-ms="20" status="PASS">
+    <test started-at="2025-09-16T22:26:51 IST" name="Default test" finished-at="2025-09-16T22:27:06 IST" duration-ms="14738">
+      <class name="TestngDemo.TNG_09_PracticalImplimentation_dataProvider">
+        <test-method is-config="true" signature="setupBrowser()[pri:0, instance:TestngDemo.TNG_09_PracticalImplimentation_dataProvider@72d1ad2e]" started-at="2025-09-16T22:26:51 IST" name="setupBrowser" finished-at="2025-09-16T22:27:01 IST" duration-ms="9637" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupBrowser -->
-        <test-method signature="setupAppURL()[pri:2, instance:TestngDemo.TNG_02_Priority@1ea9f6af]" started-at="2025-09-15T22:30:28 IST" name="setupAppURL" finished-at="2025-09-15T22:30:28 IST" duration-ms="2" status="PASS">
+        <test-method signature="loginAutomation(java.lang.String,java.lang.String)[pri:0, instance:TestngDemo.TNG_09_PracticalImplimentation_dataProvider@72d1ad2e]" started-at="2025-09-16T22:27:01 IST" name="loginAutomation" data-provider="supplyData" finished-at="2025-09-16T22:27:04 IST" duration-ms="2805" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[student]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Password123]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setupAppURL -->
-        <test-method signature="registeration()[pri:3, instance:TestngDemo.TNG_02_Priority@1ea9f6af]" started-at="2025-09-15T22:30:28 IST" name="registeration" finished-at="2025-09-15T22:30:28 IST" duration-ms="3" status="PASS">
+        </test-method> <!-- loginAutomation -->
+        <test-method signature="loginAutomation(java.lang.String,java.lang.String)[pri:0, instance:TestngDemo.TNG_09_PracticalImplimentation_dataProvider@72d1ad2e]" started-at="2025-09-16T22:27:04 IST" name="loginAutomation" data-provider="supplyData" finished-at="2025-09-16T22:27:05 IST" duration-ms="1253" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[student]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Password123]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- registeration -->
-        <test-method signature="login()[pri:4, instance:TestngDemo.TNG_02_Priority@1ea9f6af]" started-at="2025-09-15T22:30:28 IST" name="login" finished-at="2025-09-15T22:30:28 IST" duration-ms="2" status="PASS">
+        </test-method> <!-- loginAutomation -->
+        <test-method signature="loginAutomation(java.lang.String,java.lang.String)[pri:0, instance:TestngDemo.TNG_09_PracticalImplimentation_dataProvider@72d1ad2e]" started-at="2025-09-16T22:27:05 IST" name="loginAutomation" data-provider="supplyData" finished-at="2025-09-16T22:27:06 IST" duration-ms="891" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[student]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Password123]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- login -->
-        <test-method signature="CloseBrowser()[pri:5, instance:TestngDemo.TNG_02_Priority@1ea9f6af]" started-at="2025-09-15T22:30:28 IST" name="CloseBrowser" finished-at="2025-09-15T22:30:28 IST" duration-ms="2" status="PASS">
+        </test-method> <!-- loginAutomation -->
+        <test-method is-config="true" signature="stopBrowser()[pri:0, instance:TestngDemo.TNG_09_PracticalImplimentation_dataProvider@72d1ad2e]" started-at="2025-09-16T22:27:06 IST" name="stopBrowser" finished-at="2025-09-16T22:27:06 IST" duration-ms="111" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- CloseBrowser -->
-      </class> <!-- TestngDemo.TNG_02_Priority -->
+        </test-method> <!-- stopBrowser -->
+      </class> <!-- TestngDemo.TNG_09_PracticalImplimentation_dataProvider -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

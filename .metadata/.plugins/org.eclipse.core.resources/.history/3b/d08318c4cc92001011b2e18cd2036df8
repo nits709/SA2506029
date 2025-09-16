@@ -1,0 +1,32 @@
+package Assignments;
+
+import java.util.Iterator;
+import java.util.Set;
+
+import org.openqa.selenium.By;
+
+import WebdriverDemos.baseFunction;
+
+public class sample extends baseFunction {
+
+	public static void main(String[] args) throws InterruptedException {
+
+		launchBrowser("chrome");
+		launchURL("https://demoqa.com/browser-windows");
+
+		driver.findElement(By.id("tabButton")).click();
+
+		Set<String> window = driver.getWindowHandles(); // total 2 window
+
+		Iterator<String> windowHandles = window.iterator();
+		String mainWindow = windowHandles.next();
+		String childWindow = windowHandles.next();
+		
+		System.out.println("Main WindowId " + mainWindow + " : " + "Child WindowId " + childWindow);
+		
+		
+		Thread.sleep(5000);
+		driver.switchTo().window(childWindow);
+
+	}
+}

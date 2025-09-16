@@ -1,0 +1,63 @@
+package Assignments;
+
+import java.time.Duration;
+import java.util.Set;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.safari.SafariDriver;
+
+import WebdriverDemos.baseFunction;
+
+public class sample extends baseFunction {
+
+	public static void main(String[] args) throws Exception {
+		
+	        WebDriver driver;// = new ChromeDriver();
+	        driver = new SafariDriver();
+	        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+	        driver.manage().window().maximize();
+	        driver.get("https://demoqa.com/browser-windows");
+
+	        String mainWindow = driver.getWindowHandle();
+
+	        // Click "New Window Message"
+	        driver.findElement(By.id("messageWindowButton")).click();
+
+	        // Poll for new window handle
+	        String messageWindow = null;
+	        for (int i = 0; i < 10; i++) {
+	            Set<String> handles = driver.getWindowHandles();
+	            if (handles.size() > 1) {
+	                for (String h : handles) {
+	                    if (!h.equals(mainWindow)) {
+	                        messageWindow = h;
+	                        break;
+	                    }
+	                }
+	            }
+	            if (messageWindow != null) break;
+	            try { Thread.sleep(500); } catch (InterruptedException e) {}
+	        }
+
+	        if (messageWindow == null) {
+	            System.out.println("❌ Selenium could not detect the new window.");
+	        } else {
+	            driver.switchTo().window(messageWindow);
+
+	            // Even though URL is about:blank, body has injected text
+	            String message = (String) ((JavascriptExecutor) driver)
+	                    .executeScript("return document.body ? document.body.textContent.trim() : '';");
+	            System.out.println("✅ Message captured: " + message);
+
+	            driver.close();
+	            driver.switchTo().window(mainWindow);
+	        }
+
+	        driver.quit();
+	    
+    }
+
+}

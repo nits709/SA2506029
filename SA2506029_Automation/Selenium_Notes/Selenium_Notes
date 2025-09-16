@@ -2,6 +2,9 @@ Nitin Gupta.
 
 GitHub link - https://github.com/nits709/SA2506029
 
+Chromium based browser uses -- CDP (chrome dev protocol)
+Safari - WebDriverAgent (WebKit)
+Firefox - Marionette
 
 Selenuim WebDriver Module no. 3
 total session - 19 sessions.

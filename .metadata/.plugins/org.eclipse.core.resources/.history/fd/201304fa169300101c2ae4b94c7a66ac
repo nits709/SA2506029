@@ -1,0 +1,44 @@
+package TestngDemo;
+
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
+
+import WebdriverDemos.baseFunction;
+
+public class TNG_05_BeforeTest_AfterTest extends baseFunction {
+
+	@BeforeTest
+	public void setupBrowser() {
+		launchBrowser("chrome");
+	}
+
+	@AfterTest
+	public void stopBrowser() {
+		quitDriver();
+	}
+
+	@Test(priority = 1)
+	public void openFacebook() {
+
+		launchURL("https://www.facebook.com/");
+		System.out.println(driver.getTitle());
+
+	}
+
+	@Test(priority = 2)
+	public void openMyntra() {
+
+		launchURL("https://www.myntra.com/");
+		System.out.println(driver.getTitle());
+
+	}
+
+	@Test(priority = 3)
+	public void openGoogle() {
+
+		launchURL("https://www.google.com/?zx=1758037464588&no_sw_cr=1");
+		System.out.println(driver.getTitle());
+
+	}
+}

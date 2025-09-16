@@ -1,0 +1,48 @@
+package Assignments;
+
+import java.util.Iterator;
+import java.util.Set;
+
+import org.openqa.selenium.By;
+
+import WebdriverDemos.baseFunction;
+
+public class sample extends baseFunction {
+
+	public static void main(String[] args) {
+        WebDriver driver = new ChromeDriver();
+        driver.manage().window().maximize();
+        driver.get("https://demoqa.com/browser-windows");
+
+        String mainWindow = driver.getWindowHandle();
+
+        // Click on "New Window Message"
+        driver.findElement(By.id("messageWindowButton")).click();
+
+        // Wait until a new window is opened
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+        wait.until((ExpectedCondition<Boolean>) d -> driver.getWindowHandles().size() > 1);
+
+        // Switch to the new window
+        Set<String> allWindows = driver.getWindowHandles();
+        for (String window : allWindows) {
+            if (!window.equals(mainWindow)) {
+                driver.switchTo().window(window);
+
+                // Wait until body is present in new window
+                WebElement body = new WebDriverWait(driver, Duration.ofSeconds(5))
+                        .until(d -> d.findElement(By.tagName("body")));
+
+                String message = body.getText();
+                System.out.println("Message from window: " + message);
+
+                driver.close(); // close child window
+            }
+        }
+
+        driver.switchTo().window(mainWindow);
+        driver.quit();
+    }
+
+	}
+

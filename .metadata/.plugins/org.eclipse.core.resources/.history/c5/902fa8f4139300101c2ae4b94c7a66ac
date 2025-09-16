@@ -1,0 +1,33 @@
+package TestngDemo;
+
+import WebdriverDemos.baseFunction;
+
+public class TNG_03_Anotations extends baseFunction {
+
+	public void openFacebook() {
+
+		launchBrowser("chrome");
+		launchURL("https://www.facebook.com/");
+		System.out.println(driver.getTitle());
+		quitDriver();
+
+	}
+
+	public void openMyntra() {
+
+		launchBrowser("chrome");
+		launchURL("https://www.facebook.com/");
+		System.out.println(driver.getTitle());
+		quitDriver();
+
+	}
+
+	public void openGoogle() {
+
+		launchBrowser("chrome");
+		launchURL("https://www.facebook.com/");
+		System.out.println(driver.getTitle());
+		quitDriver();
+
+	}
+}

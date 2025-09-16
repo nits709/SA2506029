@@ -1,0 +1,15 @@
+package TestngDemo;
+
+import org.openqa.selenium.By;
+
+import WebdriverDemos.baseFunction;
+
+public class TNG_07_Login extends baseFunction {
+
+	
+	
+	public void loginAutomation() {
+		driver.findElement(By.xpath("//*[@id='username']")).sendKeys("student");
+	}
+	
+}

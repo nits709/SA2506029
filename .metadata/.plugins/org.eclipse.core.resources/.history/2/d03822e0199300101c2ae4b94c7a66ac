@@ -1,0 +1,132 @@
+TestNG(Next generation)
+Apache Foundation.
+Its an open source/ free to use
+One of the most popular unit testing framework
+
+1. Advantages
+	a. Makes automation test execution easier.
+	b. you can group test cases or collection of multiple tc's
+	c. set priority on test cases
+		login -> plp -> pdp - logout
+	d. Uses Anotations
+	 a. @Test
+	 b. @BeforeTest - run once prior all test present in class during single session.
+	 c. @AfterTest - run once after all test executes in class during single session.
+	 d. @BeforeMethod - runs before each test
+	 e. @AfterMethod - runs after each test
+	 f. @BeforeClass - Assignment  
+	 g. @AfterClass - Assignment
+	 i. @DataProvider
+	 j. priority (method)
+	
+	e.Allows tester to generate Reports.
+	 1. normal report
+	 2. html report - extent reports / allure report.
+	
+	f.  Cross browser testing
+		run single test on multiple browser
+		single test on single browser
+		parallel execution.
+	
+	g. allow user to re-use selenium scripts.			 
+	 	
+	 	
+	 	
+	 	Anotation scenario's
+	 	
+	 	1. open facebook
+	 	2. open google
+	 	3. open myntra
+	 	
+	 	
+	 	browser
+	 	
+	 	
+	 	opening facebook
+	 	get title
+
+	 	opening myntra
+	 	get title
+	 
+	 	opening google
+	 	get title
+
+	 	
+	 	close browser
+	 	
+	=============================================================
+	
+	Anotation scenario's
+	 	
+	 	1. open facebook
+	 	2. open google
+	 	3. open myntra
+	 	
+	
+		browser
+	 	
+	 	
+	 	opening facebook
+	 	get title
+
+	 	opening myntra
+	 	get title
+	 
+	 	opening google
+	 	get title
+
+	 	
+	 	close browser
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	 	
+	 	
+
+	 	
+	 	
+	 	
+	 	
+	 	
+	 	
+	 	
+	 	
+	 	
+	 	
+	 	
+	 	
+	 	
+	 	
+	 	
+	 	
+	 	
+	 	
+	 	
+	 	
+	 	
+	 	
+	 	

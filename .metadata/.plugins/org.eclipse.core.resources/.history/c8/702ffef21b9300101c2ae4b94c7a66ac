@@ -1,0 +1,38 @@
+package TestngDemo;
+
+import WebdriverDemos.baseFunction;
+
+public class TNG08_TestDataProvider extends baseFunction {
+	
+	
+	
+	
+	
+	// nitin, gupta, phone
+	public void supplyData() {
+		
+		Object[][] data = new Object[2][3];
+		
+		
+		// data row 1 
+		data[0][0] = "Username";
+		data[0][1] = "password";
+		data[0][2] = "PhoneNo";
+		
+		
+		//data row 2
+		data[0][0] = "Nitin";
+		data[0][1] = "Gupta";
+		data[0][2] = "XXXXXXXXX";
+		
+		
+		//data row 3
+				data[0][0] = "sachin";
+				data[0][1] = "Gupta";
+				data[0][2] = "&&&&&&";
+		
+		
+		
+	}
+
+}

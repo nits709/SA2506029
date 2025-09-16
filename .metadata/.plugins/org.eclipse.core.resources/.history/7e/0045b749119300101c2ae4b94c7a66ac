@@ -1,0 +1,26 @@
+package TestngDemo;
+
+import org.testng.annotations.Test;
+
+import WebdriverDemos.baseFunction;
+
+public class TNG_03_DP extends baseFunction {
+	
+	
+	@Test
+	public void search() {
+		System.out.println("search a phone");
+	}
+	
+	@Test
+	public void selectPhonefromPDP() {
+		System.out.println("add phone to cart from PDP");
+	}
+
+	
+	@Test
+	public void checkout() {
+		System.out.println("checkout the phone");
+	}
+
+}

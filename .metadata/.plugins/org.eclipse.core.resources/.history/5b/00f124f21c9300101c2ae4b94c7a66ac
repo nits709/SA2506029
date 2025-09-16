@@ -1,0 +1,46 @@
+package TestngDemo;
+
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Test;
+
+import WebdriverDemos.baseFunction;
+
+public class TNG08_TestDataProvider extends baseFunction {
+
+	// no of rows would equal to number tests iterations.
+	// no. of column size would equal to number of variable.
+
+	
+	@Test(dataProvider='supplyData')
+	public void getData(String username, String password, String phoneNo) {
+
+	}
+
+	
+	
+	// nitin, gupta, phone
+	@DataProvider
+	public Object[][] supplyData() {
+
+		Object[][] data = new Object[3][3];
+
+		// data row 1
+		data[0][0] = "Username";
+		data[0][1] = "password";
+		data[0][2] = "PhoneNo";
+
+		// data row 2
+		data[1][0] = "Nitin";
+		data[1][1] = "Gupta";
+		data[1][2] = "XXXXXXXXX";
+
+		// data row 3
+		data[2][0] = "sachin";
+		data[2][1] = "Gupta";
+		data[2][2] = "&&&&&&";
+
+		return data;
+
+	}
+
+}

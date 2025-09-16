@@ -105,7 +105,12 @@
     d. get validate youtube window title.
 
 22.  https://www.istqb.in/
-    a. Get the text of each link present under menu and prnt on console.    		
+    a. Get the text of each link present under menu and print on console.
+    
+23: Open orangeHRM https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+	try to login with dataprovider upto maximum 2 times      
+    
+      		
 
 		   
 	

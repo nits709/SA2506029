@@ -10,12 +10,12 @@ One of the most popular unit testing framework
 		login -> plp -> pdp - logout
 	d. Uses Anotations
 	 a. @Test
-	 b. @BeforeTest
-	 c. @AfterTest
-	 d. @BeforeMethod
-	 e. @AfterMethod
-	 f. @BeforeClass
-	 g. @AfterClass
+	 b. @BeforeTest - run once prior all test present in class during single session.
+	 c. @AfterTest - run once after all test executes in class during single session.
+	 d. @BeforeMethod - runs before each test
+	 e. @AfterMethod - runs after each test
+	 f. @BeforeClass - Assignment  
+	 g. @AfterClass - Assignment
 	 i. @DataProvider
 	 j. priority (method)
 	
@@ -29,4 +29,113 @@ One of the most popular unit testing framework
 		parallel execution.
 	
 	g. allow user to re-use selenium scripts.			 
+	 	
+	 	
+	 	
+	 	Anotation scenario's
+	 	
+	 	1. open facebook
+	 	2. open google
+	 	3. open myntra
+	 	
+	 	
+	 	browser
+	 	
+	 	
+	 	opening facebook
+	 	get title
+
+	 	opening myntra
+	 	get title
+	 
+	 	opening google
+	 	get title
+
+	 	
+	 	close browser
+	 	
+	=============================================================
+	
+	Anotation scenario's
+	 	
+	 	1. open facebook
+	 	2. open google
+	 	3. open myntra
+	 	
+	
+		browser
+	 	
+	 	
+	 	opening facebook
+	 	get title
+
+	 	opening myntra
+	 	get title
+	 
+	 	opening google
+	 	get title
+
+	 	
+	 	close browser
+	 	
+	 	
+	 	
+	 	What is parameterization?
+	 	when you same function or steps of same function to  perform with different sets of testdata
+	 	 like 
+	 	 1. loginpage. - 1000 times
+	 	 2. place 100 orders in amazone - testdata
+	 	 3. google - testData - URLs
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	 	
+	 	
+
+	 	
+	 	
+	 	
+	 	
+	 	
+	 	
+	 	
+	 	
+	 	
+	 	
+	 	
+	 	
+	 	
+	 	
+	 	
+	 	
+	 	
+	 	
+	 	
+	 	
+	 	
+	 	
 	 	
