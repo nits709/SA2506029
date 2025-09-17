@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="My Suite">
+	<test name="MyTest">
+		<classes>
+			<class name="TestngDemo.TNG_07_Login">
+				<methods>
+					<include name="loginAutomation" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>

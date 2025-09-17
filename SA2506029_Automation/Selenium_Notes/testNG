@@ -89,6 +89,35 @@ One of the most popular unit testing framework
 	
 	
 	
+	What is Assertions? - checkpoints
+	Assertion can be achieved by using hard and soft assert in selenium webdriver
+	if two values or condition matches - assertion pass.
+	else fail
+	
+		1. Hard Assertion - checks the condition and value if matches it pass else stop the execution immideiatly
+		2. Soft Assertion - checks the condition and value if matches it pass else it collects all error and log into
+							reports after test execution over.
+							
+			Assert.assertTrue -- thats checks the conditions - isElementExists - 
+			Assert.assertEquals - that checks the value	 -- title, getText 	
+			only incase of softassert assertAll() - this would report all error in reports
+			
+			
+			
+			
+			testNG.xml	
+				1. executes single test
+				2. executes multiple test
+				3. executes multiple test from different classes
+				4. you can manage - include and exclude the testcases.
+				5. executes testcases which belongs to same groups ( login, register, checkout, payment)
+				6. executes testcases in parallel	
+				
+				
+				steps
+				1. create file and type of that is .xml	
+	
+	
 	
 	
 	

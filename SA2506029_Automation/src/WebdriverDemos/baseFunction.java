@@ -1,12 +1,16 @@
 package WebdriverDemos;
 
+import java.io.File;
+import java.io.IOException;
 import java.time.Duration;
-
+import org.openqa.selenium.OutputType;
 import org.openqa.selenium.PageLoadStrategy;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.io.FileHandler;
 import org.openqa.selenium.safari.SafariDriver;
 
 public class baseFunction {
@@ -16,7 +20,7 @@ public class baseFunction {
 	public static void launchBrowser(String browserName) {
 
 		if (browserName.equals("chrome")) {
-			
+
 			ChromeOptions options = new ChromeOptions();
 			options.setPageLoadStrategy(PageLoadStrategy.NONE);
 			driver = new ChromeDriver();
@@ -31,7 +35,7 @@ public class baseFunction {
 	}
 
 	public static void launchURL(String appURL) {
-		driver.get(appURL); //30 seconds waits
+		driver.get(appURL); // 30 seconds waits
 		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(30));
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 	}
@@ -39,17 +43,30 @@ public class baseFunction {
 	public static void sleep() {
 
 		try {
-			Thread.sleep(5000);
+			Thread.sleep(2000);
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}
-	
-	
+
+	public void takeScreenShots() {
+		try {
+			sleep();
+			// TakesScreenShot is an interface from selenium webdriver which help to take
+			// SS.
+			TakesScreenshot ts = (TakesScreenshot) driver;
+			// ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+			File sourceFile = ts.getScreenshotAs(OutputType.FILE);
+			FileHandler.copy(sourceFile, new File("C://FolderName/Nitin.jpeg"));
+			File file = new File("Nitin.jpeg");
+		} catch (Exception e) {
+			System.out.println(e.getLocalizedMessage());
+		}
+	}
+
 	public static void quitDriver() {
 		driver.quit();
 	}
+
 }
-
-

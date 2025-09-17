@@ -20,7 +20,7 @@ public class TNG_07_Login extends baseFunction {
 		quitDriver();
 	}
 
-	@Test
+	@Test(priority=1)
 	public void loginAutomation() {
 		driver.findElement(By.xpath("//*[@id='username']")).sendKeys("student");
 		driver.findElement(By.xpath("//*[@id='password']")).sendKeys("Password123");
@@ -29,7 +29,7 @@ public class TNG_07_Login extends baseFunction {
 	}
 	
 	
-	@Test
+	@Test(priority=2)
 	public void loginAutomation1() {
 		driver.findElement(By.xpath("//*[@id='username']")).sendKeys("Nitin");
 		driver.findElement(By.xpath("//*[@id='password']")).sendKeys("Password123");
@@ -38,7 +38,7 @@ public class TNG_07_Login extends baseFunction {
 	}
 	
 	
-	@Test
+	@Test(priority=3)
 	public void loginAutomation2() {
 		driver.findElement(By.xpath("//*[@id='username']")).sendKeys("student");
 		driver.findElement(By.xpath("//*[@id='password']")).sendKeys("Password123");

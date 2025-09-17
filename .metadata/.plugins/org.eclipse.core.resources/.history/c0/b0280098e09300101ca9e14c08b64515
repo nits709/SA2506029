@@ -1,0 +1,12 @@
+package TestngDemo;
+
+public class TNG09_Assertions {
+	
+	
+	
+	public void testA() {
+		System.out.println("A");
+		
+	}
+
+}

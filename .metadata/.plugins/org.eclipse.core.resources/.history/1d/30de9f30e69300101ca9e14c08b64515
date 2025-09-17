@@ -1,0 +1,11 @@
+<suite name="SingleTestSuit">
+	<test name="MySingleTest">
+		<classes>
+			<class name="com.example.tests.MyTestClass">
+				<methods>
+					<include name="myTestMethod" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="My Suite">
+	<test name="MyTest">
+		<classes>
+			<class name="TestngDemo.TNG_07_Login">
+			</class>
+			<class name="TNG08_TestDataProvide">
+			</class>
+		</classes>
+	</test>
+</suite>

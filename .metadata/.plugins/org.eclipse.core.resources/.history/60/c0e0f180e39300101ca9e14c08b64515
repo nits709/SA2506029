@@ -1,0 +1,32 @@
+package TestngDemo;
+
+import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
+
+public class TNG09_Assertions {
+
+	// Assert - Hard Assertions
+	@Test
+	public void testA() {
+//		System.out.println("A");
+//		// Assert.assertTrue(2>=4); // false
+//		Assert.assertFalse(2 >= 4); // false
+//		System.out.println("B");
+//		Assert.assertEquals("Nitin", "Nitin");// pass
+//		Assert.assertEquals("Sachin", "Nitin"); //false
+//		System.out.println("C");
+//		System.out.println("D");
+		
+		SoftAssert sa = new SoftAssert();
+		System.out.println("A");
+		sa.assertTrue(2>=4);
+		System.out.println("B");
+		System.out.println("C");
+		sa.assertEquals("Sachin", "Nitin"); //false
+		System.out.println("D");
+		
+		sa.assertAll();
+
+	}
+
+}

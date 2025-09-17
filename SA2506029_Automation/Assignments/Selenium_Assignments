@@ -108,7 +108,15 @@
     a. Get the text of each link present under menu and print on console.
     
 23: Open orangeHRM https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
-	try to login with dataprovider upto maximum 2 times      
+	try to login with dataprovider upto maximum 2 times 
+
+24. pick any websites 
+	user hard assertion and soft assertion 
+	to check element isDisplayed
+	to check the url
+	to check the titleofthepage 
+	
+	   
     
       		
 

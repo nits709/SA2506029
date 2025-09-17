@@ -1,0 +1,21 @@
+package TestngDemo;
+
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
+public class TNG09_Assertions {
+	
+	//Assert - Hard Assertions
+	@Test
+	public void testA() {
+		System.out.println("A");
+		//Assert.assertTrue(2>=4); // false
+		Assert.assertFalse(2>=2); // false
+		System.out.println("B");
+		Assert.assertEquals("Nitin","Nitin");
+		System.out.println("C");
+		System.out.println("D");
+		
+	}
+
+}

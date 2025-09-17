@@ -399,6 +399,46 @@ total session - 19 sessions.
     	
     	3. Website -->  ParentIframe1  -> Element --> Child1Iframe --> Element
     					  --> Child2Iframe --> Element 
+    					  
+    					  
+    					  
+    					  
+    					  Webdriver driver = new ChromDriver();
+    					  
+    					  
+    					  
+    					  
+    					  		Webdriver -- interface
+    					  		
+    					  		
+    					  	driver = new Chromdriver - class
+    					  		
+    					  		
+    		javascriptExecutor js = javascriptExecutor (driver)
+    		
+    		
+    		TakeScreenShot
+    		
+    		
+    		Hospital is interface
+    			1. blood test()
+    			2. storeData()
+    			3. registeration()
+    			
+    	
+    	CityHospital implements Hospitals
+
+    		4. fullbodyscan()
+    		5. Kidneyscantest()	
+    		
+    		
+    
+    		GovtHospital implements Hospitals
+    			
+    		    4. fullbodyscan() 
+    			
+    			
+    			
  
     			
     	

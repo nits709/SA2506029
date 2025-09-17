@@ -3,13 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="TestngDemo.TNG_07_Login">
+      <class name="TestngDemo.TNG09_Assertions">
         <methods>
-          <include name="setupBrowser"/>
-          <include name="loginAutomation1"/>
-          <include name="stopBrowser"/>
+          <include name="testA"/>
         </methods>
-      </class> <!-- TestngDemo.TNG_07_Login -->
+      </class> <!-- TestngDemo.TNG09_Assertions -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
