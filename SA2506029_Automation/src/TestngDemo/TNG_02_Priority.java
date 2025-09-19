@@ -19,12 +19,12 @@ public class TNG_02_Priority {
 		System.out.println("register done");
 	}
 
-	@Test (priority=4)
+	@Test (priority=4,enabled=false)
 	public void login() {
 		System.out.println("login done.....");
 	}
 
-	@Test (priority=5)
+	@Test (priority=5,enabled=false)
 	public void CloseBrowser() {
 		System.out.println("browserClose");
 	}

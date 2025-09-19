@@ -437,6 +437,15 @@ total session - 19 sessions.
     			
     		    4. fullbodyscan() 
     			
+   
+   how to work with properties files?
+   1.  	Create an object of file class
+   2. 	supply the filepath to this class
+   3.  Whenever we reading data from external file -- java will read such data in form of streams
+   		stream is channel in which data flows
+   4. Create an object of fileInputStream / file outputstream
+   5. Create an object of properties file
+   6. sync properties with fileinput stream by using load();	
     			
     			
  

@@ -2,10 +2,13 @@
 <suite name="My Suite">
 	<test name="MyTest">
 		<classes>
-			<class name="TestngDemo.TNG_02_Priority">
+			<class name="TestngDemo.TNG11_groupingTestcases">
 			</class>
-			<class name="TestngDemo.TNG08_TestDataProvider">
-			</class> 
 		</classes>
+		<groups>
+			<run>
+				<include name="Sell"></include>
+			</run>
+		</groups>
 	</test>
 </suite>

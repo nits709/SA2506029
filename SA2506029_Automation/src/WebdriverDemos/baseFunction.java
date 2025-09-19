@@ -17,10 +17,11 @@ public class baseFunction {
 
 	public static WebDriver driver = null;
 
+	
+	
 	public static void launchBrowser(String browserName) {
 
 		if (browserName.equals("chrome")) {
-
 			ChromeOptions options = new ChromeOptions();
 			options.setPageLoadStrategy(PageLoadStrategy.NONE);
 			driver = new ChromeDriver();

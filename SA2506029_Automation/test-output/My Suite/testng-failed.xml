@@ -2,14 +2,18 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [My Suite]">
   <test thread-count="5" name="MyTest(failed)">
+    <groups>
+      <run>
+        <include name="Sell"/>
+      </run>
+    </groups>
     <classes>
-      <class name="TestngDemo.TNG_07_Login">
+      <class name="TestngDemo.TNG11_groupingTestcases">
         <methods>
-          <include name="setupBrowser"/>
-          <include name="loginAutomation1"/>
-          <include name="stopBrowser"/>
+          <include name="testBestsellersLink"/>
+          <include name="testSellLink"/>
         </methods>
-      </class> <!-- TestngDemo.TNG_07_Login -->
+      </class> <!-- TestngDemo.TNG11_groupingTestcases -->
     </classes>
   </test> <!-- MyTest(failed) -->
 </suite> <!-- Failed suite [My Suite] -->

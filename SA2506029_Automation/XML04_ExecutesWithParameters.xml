@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="My Suite">
+	<test name="MyTest">
+
+		<paramters>
+			<parameter name="username" value="student"></parameter>
+			<parameter name="password" value="Password123"></parameter>
+		</paramters>
+		
+		<classes>
+			<class name="TestngDemo.TNG10_ExecutionWithParameter">
+			</class>
+		</classes>
+	</test>
+</suite>

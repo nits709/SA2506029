@@ -2,24 +2,28 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-09-17T22:38:03 IST" name="My Suite" finished-at="2025-09-17T22:38:15 IST" duration-ms="12057">
+  <suite started-at="2025-09-19T22:33:30 IST" name="Default suite" finished-at="2025-09-19T22:33:44 IST" duration-ms="13534">
     <groups>
     </groups>
-    <test started-at="2025-09-17T22:38:03 IST" name="MyTest" finished-at="2025-09-17T22:38:15 IST" duration-ms="12057">
-      <class name="TestngDemo.TNG_07_Login">
-        <test-method is-config="true" signature="setupBrowser()[pri:0, instance:TestngDemo.TNG_07_Login@1fa268de]" started-at="2025-09-17T22:38:03 IST" name="setupBrowser" finished-at="2025-09-17T22:38:12 IST" duration-ms="9118" status="PASS">
+    <test started-at="2025-09-19T22:33:30 IST" name="Default test" finished-at="2025-09-19T22:33:44 IST" duration-ms="13534">
+      <class name="WebdriverDemos.SA35_KeyWord_BaseAutomationScripts">
+        <test-method is-config="true" signature="setupObjects()[pri:0, instance:WebdriverDemos.SA35_KeyWord_BaseAutomationScripts@12468a38]" started-at="2025-09-19T22:33:30 IST" name="setupObjects" finished-at="2025-09-19T22:33:30 IST" duration-ms="37" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupObjects -->
+        <test-method is-config="true" signature="setupBrowser()[pri:0, instance:WebdriverDemos.SA35_KeyWord_BaseAutomationScripts@12468a38]" started-at="2025-09-19T22:33:30 IST" name="setupBrowser" finished-at="2025-09-19T22:33:41 IST" duration-ms="10513" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupBrowser -->
-        <test-method signature="loginAutomation()[pri:1, instance:TestngDemo.TNG_07_Login@1fa268de]" started-at="2025-09-17T22:38:12 IST" name="loginAutomation" finished-at="2025-09-17T22:38:15 IST" duration-ms="2800" status="PASS">
+        <test-method signature="automationFacebook()[pri:0, instance:WebdriverDemos.SA35_KeyWord_BaseAutomationScripts@12468a38]" started-at="2025-09-19T22:33:41 IST" name="automationFacebook" finished-at="2025-09-19T22:33:44 IST" duration-ms="2839" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginAutomation -->
-        <test-method is-config="true" signature="stopBrowser()[pri:0, instance:TestngDemo.TNG_07_Login@1fa268de]" started-at="2025-09-17T22:38:15 IST" name="stopBrowser" finished-at="2025-09-17T22:38:15 IST" duration-ms="97" status="PASS">
+        </test-method> <!-- automationFacebook -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:WebdriverDemos.SA35_KeyWord_BaseAutomationScripts@12468a38]" started-at="2025-09-19T22:33:44 IST" name="closeBrowser" finished-at="2025-09-19T22:33:44 IST" duration-ms="104" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- stopBrowser -->
-      </class> <!-- TestngDemo.TNG_07_Login -->
-    </test> <!-- MyTest -->
-  </suite> <!-- My Suite -->
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- WebdriverDemos.SA35_KeyWord_BaseAutomationScripts -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

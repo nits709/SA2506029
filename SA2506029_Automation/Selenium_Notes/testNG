@@ -116,10 +116,26 @@ One of the most popular unit testing framework
 				
 				steps
 				1. create file and type of that is .xml	
+				
+				
+	How to skipping tstcases in testNG
+		1. by using skipping exception (throw the error)
+		2. safest way to skip testcases in testng (this can be achieved using testng.xml)
+					enabled (default value is true)
+					1. flag -- if values set as true | this will not skips the testcase during run.
+					2. flag -- if values set as false | this will skips the testcase during run.
 	
 	
+	1 project - XXXX ( last 7 years)  2 release per month.  ( 1 week)
+		1. A   - 10 (markets)  - 1100 * 10 = 11000  / 2   = 5500 * 3
+		2. B  - 6 (markets)  - 600 * 6 = 3600
+		3. C - (3 Markets) 350 * 3 = 1050
+
+			 60 
 	
 	
+	for parallel execution 
+	flag - name is parallel = value could method/test/classes
 	
 	
 	
