@@ -448,6 +448,52 @@ total session - 19 sessions.
    6. sync properties with fileinput stream by using load();	
     			
     			
+    			
+    			
+Location to download Apache - POI jars    			
+1. Navigate to https://archive.apache.org/dist/poi/release/bin/
+2. look up for poi-bin-5.2.3-20220909.zip (Jars)
+3. Click on poi-bin-5.2.3-20220909.zip (jars will start download automatically)
+
+
+	DataDriven Scenario with ExcelFiles
+    testscripts driven by testData
+    
+1.  reading the data from excel file to execute testcases/ functionality
+2.  to Open multiple URL's and validate the title of pages then write url and title over excel file
+3.  get the data (webTable - cricket scoreboard) match. write the same data into excel file.
+4.  placing order in ecommerce websites and capture order details then write into excel files.
+
+
+		perf. 2 types of operations with POI libraries.
+		1. write into excel file
+		2. read from the excel file     
+
+	Excel -> workbook
+	
+	workbook --> sheet -> Rows - Cells /Columns
+	
+		1. Create an object File.
+		2. Create an object FileInputStream(Read)/FileOutputStream (Write)
+		3. Create an Object of Workbook.
+		4. Create a reference of Sheet.
+		5. Create a reference of Rows
+		6. Create a reference of cell/column
+		
+		
+		1. File --> FileInputStream --> Workbook --> sheet -- rows -- cells
+		
+		2. File --> FileOutPutStream --> Workbook --> sheet -- rows -- cells
+
+
+		type of excel file extension.
+		1. XXXXX.xls  excel file version between from 97 - 2003
+		2. .xlsx after MS office 2007
+		
+		
+		.xls HSSFworkbook | outdated now (no one is using this).
+		.xlsx XSSFworkbook | currently in use everywhere.
+    			
  
     			
     	

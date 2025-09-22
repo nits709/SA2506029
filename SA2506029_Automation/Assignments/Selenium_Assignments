@@ -118,6 +118,32 @@
 	
 	   
     
+POI Assignments
+	
+1. Create an Excel file loginData.xlsx with columns: Username, Password.
+    Read each row using Apache POI.
+    Open the login page of a demo website (e.g., https://the-internet.herokuapp.com/login).
+    Perform login attempts using credentials from the Excel sheet.
+    Write the result (Success or Failure) back to a new column in the same Excel file. 
+
+2. Scrape data from a webpage and store it in an Excel file.
+    1.Visit a product listing site like https://automationexercise.com/products.
+    2.Extract the product name, price
+    3.Write the scraped data into an Excel sheet products.xlsx with appropriate headers. 
+    
+3.Fill out a web form using data from Excel.
+   1.Excel file formData.xlsx has columns: FirstName, LastName, Email, Message.
+   2.Automate filling a form at https://demoqa.com/automation-practice-form using this data.
+   3.Validate form submission and log the result (e.g., Submitted, Error) back to the Excel file.
+   
+4. Write WebTable Data into excel file 
+    1. Use a page like https://www.techlistic.com/p/demo-selenium-practice.html.
+    
+    		OR
+    		
+5. https://www.cricbuzz.com/live-cricket-scorecard/91778/aus-vs-ind-1st-test-india-tour-of-australia-2024-25		
+	1. Read web table data and write into excel.
+   
       		
 
 		   
