@@ -4,7 +4,7 @@
 	<item key="org.eclipse.jdt.ui.last.selected.execution.enviroment" value="JavaSE-21"/>
 	<item key="org.eclipse.jdt.ui.last.selected.create.moduleinfo.comments" value="false"/>
 	<item key="org.eclipse.jdt.ui.last.selected.create.moduleinfo" value="false"/>
-	<item key="org.eclipse.jdt.ui.lastextjar" value="/Volumes/Renuka/Jar_Repository/poi-bin-5.2.3/ooxml-lib"/>
+	<item key="org.eclipse.jdt.ui.lastextjar" value="/Volumes/Renuka/Jar_Repository/poi-bin-5.2.3/auxiliary"/>
 	<item key="org.eclipse.jdt.ui.last.external.project" value="/Volumes/Renuka/Professional Stuff (Restricted)/Session_material/Session_WorkSpaces/Automation_SA2506029/Selenium_Jars/selenium-java-4.35.0"/>
 	<section name="org.eclipse.jdt.internal.ui.packageview.PackageExplorerPart">
 		<item key="group_libraries" value="true"/>
@@ -36,8 +36,8 @@
 		<item key="create_package_info_java" value="false"/>
 	</section>
 	<section name="NewClassCreationWizard.dialogBounds">
-		<item key="DIALOG_X_ORIGIN" value="684"/>
-		<item key="DIALOG_Y_ORIGIN" value="164"/>
+		<item key="DIALOG_X_ORIGIN" value="373"/>
+		<item key="DIALOG_Y_ORIGIN" value="123"/>
 		<item key="DIALOG_WIDTH" value="586"/>
 		<item key="DIALOG_HEIGHT" value="650"/>
 		<item key="DIALOG_FONT_NAME" value="1|.AppleSystemUIFont|11.0|0|COCOA|1|.AppleSystemUIFont"/>

@@ -493,6 +493,37 @@ Location to download Apache - POI jars
 		
 		.xls HSSFworkbook | outdated now (no one is using this).
 		.xlsx XSSFworkbook | currently in use everywhere.
+		
+		
+		What is Maven? depends on internet.
+   Maven is build automation and project management tools
+   no need to download the jars(selenium, POI,testng) Maven fetch them automatically.
+   In project each testers using single POM. xml file.
+   project object model.xml
+    dependencies 
+    	selenium 
+    	testng
+    	POI
+    	Extentreport
+   selenium jars
+   testng jars
+   POI jars 
+   
+   Maven having one central repository which hosted over internet. 	
+   
+   
+   1000 tc's 
+   i want to run this without jenkins
+   run we can execute this with help of maven
+   
+   we can also execute this with help of jenkins + maven
+   
+   GroupID - ProjectName
+   ArtifactsID  - PackageName
+   
+   Steps to create Maven Project.
+   1. 
+		
     			
  
     			
@@ -505,7 +536,18 @@ Location to download Apache - POI jars
     										
 
 
-
+beforeSuite calling
+beforeTest calling
+beforeClass calling
+beforeMethod calling
+Sample Test calling
+AfterMethod calling
+beforeMethod calling
+Sample Test1 calling
+AfterMethod calling
+AfterClass calling
+AfterTest calling
+AfterSuite calling
 
 
 
