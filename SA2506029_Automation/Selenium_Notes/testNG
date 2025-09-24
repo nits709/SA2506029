@@ -139,6 +139,21 @@ One of the most popular unit testing framework
 	
 	
 	
+	Execution order of testNG anotations
+beforeSuite calling
+beforeTest calling
+beforeClass calling
+beforeMethod calling
+Sample Test calling
+AfterMethod calling
+beforeMethod calling
+Sample Test1 calling
+AfterMethod calling
+AfterClass calling
+AfterTest calling
+AfterSuite calling
+	
+	
 	
 	
 	

@@ -524,8 +524,120 @@ Location to download Apache - POI jars
    Steps to create Maven Project.
    1. 
 		
-    			
+    
+    
+    BDD - Behavioral Driven Development
+    BA,Tester,Developer, Sometime designer will gather the requirement (BRS/TRS)
+    Requirements will be shared with QA team and QA team will create Feature File			
+ 	(First Component of BDD) (Collection of test scenario's)
+ 	Then this feature file will be shared with
+ 		1. Developer - so that developer create the application.
+ 		2. Manual Tester - so that manual tester can create a testcases.
+ 		3. Automation Tester - so that he/she will create automation scripts.
  
+ 	Now automation tester will create automation scripts - Glue code/ Step definition
+ 	(Second Component).
+ 	For execution of step definition (Automation scripts) tester have to use Runner class
+ 	(Third Component of BDD)
+ 	
+ 	Cucumber is used to implement BDD framework (approach)
+ 	
+ 	
+ 	Create cucumber project  (1st apporach)
+ 	1. File --> New --> Maven Project
+ 	2. Select 3rd check box --> next button
+ 	3. type "io.cucumber" as filter --> next
+ 	4. Enter archtypeID and groupID --> Finish
+ 	
+ 	5. In pom.xml select line number from 12
+ 		<properties> to </dependencies> (line no. 67)
+ 	6. then hit delete button from keyboard or backspace	
+ 	7. paste below code in pom.xml in line from 12 to 67
+ 		<properties>
+				<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+				 <java.version>11</java.version>
+				<junit.version>4.13.1</junit.version>
+				<cucumber.version>6.8.2</cucumber.version>
+				<cucumber.version>6.9.0</cucumber.version>
+			</properties>
+		<dependencies>
+			<!--  https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java  -->
+			<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-java</artifactId>
+			<version>4.28.1</version>
+			</dependency>
+			<dependency>	
+			<groupId>io.cucumber</groupId>
+<artifactId>cucumber-java</artifactId>
+<version>${cucumber.version}</version>
+<scope>test</scope>
+</dependency>
+<dependency>
+<groupId>io.cucumber</groupId>
+<artifactId>cucumber-junit</artifactId>
+<version>${cucumber.version}</version>
+<scope>test</scope>
+</dependency>
+<dependency>
+<groupId>junit</groupId>
+<artifactId>junit</artifactId>
+<version>${junit.version}</version>
+<scope>test</scope>
+</dependency>
+</dependencies>
+ 			
+ 		
+ 		2. create cucumber project with second Approach
+ 		1. File -> new --> Maven project
+ 		2. Select 1st checkbox --> next
+ 		3. enter groupID and archtypeID --> next and finish.
+ 		4. paste line no.7 code (from approach 1st) after version tag till before </project>
+ 	
+ 	
+ 	
+8. go to the eclipse marketplace under help
+9. download cucumber plugins --> cucumber eclipse plugin 3.0
+
+first component of BDD
+1. Feature File. (Test suite)
+		a. Collection of test scenario's
+		b. Create a test scenario/ testcases by using gherkin langugage.
+		c. file must have ending with .feature (extension) (downloaded cucumber eclipse plugin)
+		d. Contains Keywords:
+				Feature: Represent requirement
+				Scenario: Test objective.
+				Given: pre-conditions
+				When: steps to follow (test steps)
+				And: add multiple test steps
+				Then: to check the expected condition
+				Examples:
+				Scenario Outline:
+				
+2. Second Component of BDD (StepDefinition files) Glue Code
+		a. Normal java file
+		b. have methods which satsified the steps metioned in feature file
+		c. cucmber methods (Given,When,Then,Add,)
+		d. webdriver code (logic)
+			
+		first scenario:
+		To validate google search
+		1. Open Google
+		2. Read Title
+		3. Validate the Title.	
+		
+		
+		
+		
+		principle working in cucumber
+		1. feature file can be created under src/test/resources
+		2. feature --> StepsDefinition
+			
+				
+ 		
+		
+ 		
+ 		
     			
     	
     	
@@ -536,18 +648,6 @@ Location to download Apache - POI jars
     										
 
 
-beforeSuite calling
-beforeTest calling
-beforeClass calling
-beforeMethod calling
-Sample Test calling
-AfterMethod calling
-beforeMethod calling
-Sample Test1 calling
-AfterMethod calling
-AfterClass calling
-AfterTest calling
-AfterSuite calling
 
 
 
