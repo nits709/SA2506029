@@ -634,14 +634,87 @@ first component of BDD
 		2. feature --> StepsDefinition
 			
 				
- 		
+ 		======================
+ 		user below cucumber project depenedcies if u facing executino exceptions
+ 		<properties>
+    <java.version>21</java.version>
+    <selenium.version>4.35.0</selenium.version>
+    <cucumber.version>7.29.0</cucumber.version>
+    <junit.version>4.13.2</junit.version>
+</properties>
+
+<dependencies>
+    <!-- Selenium -->
+    <dependency>
+        <groupId>org.seleniumhq.selenium</groupId>
+        <artifactId>selenium-java</artifactId>
+        <version>${selenium.version}</version>
+    </dependency>
+
+    <!-- Cucumber (Java) -->
+    <dependency>
+        <groupId>io.cucumber</groupId>
+        <artifactId>cucumber-java</artifactId>
+        <version>${cucumber.version}</version>
+        <scope>test</scope>
+    </dependency>
+
+    <!-- Cucumber JUnit 4 integration -->
+    <dependency>
+        <groupId>io.cucumber</groupId>
+        <artifactId>cucumber-junit</artifactId>
+        <version>${cucumber.version}</version>
+        <scope>test</scope>
+    </dependency>
+
+    <!-- JUnit 4 -->
+    <dependency>
+        <groupId>junit</groupId>
+        <artifactId>junit</artifactId>
+        <version>${junit.version}</version>
+        <scope>test</scope>
+    </dependency>
+</dependencies>
 		
  		
+ 	Tags in cucumber
+ 	1. tags is use to run/ execute testcases (scenario's ) in feature file
+ 	2. tags helps to group or filter the scenarios
+ 	3. With tags
+ 			a. run single testcase
+ 			b. run multiple testcases
+ 			c. skip single/multiple testcases
+ 	4. Tags defined in feature file only. (impact brings when user run scenarios from runner file).
+ 	5. @ - special character. @smoke, @sanity, @checkout, @login
+ 	6. tag conditions defined in runner file.			
  		
+ 		
+ 		
+ 		
+ 	How to get below mention scenario in Cucumber Hooks (anotations)
+ 	1. @Before similar like  BeforeMethod in testng
+ 	2. @After similar like  AfterMethod in testng
+ 	run some line of code prior to my each test
+ 	run some line of code after my each test ran.
+ 	
+ 	
+ 	
+ 	
+ 	Javascript Executor scroll.
+	1. Scroll from one position to another position
+	2. scroll into the element (ElementScrollIntoView)
+	3. scroll based on pixel (co-oridnates)		
     			
     	
     	
-    		
+Can designed POM (Page object Model) in 2 different way
+
+create POM framework with 
+PageFactory class -- from selenium 
+without pagefactory class
+
+
+	
     			
     			
     			

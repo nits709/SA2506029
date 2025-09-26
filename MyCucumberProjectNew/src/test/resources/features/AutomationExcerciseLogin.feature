@@ -1,18 +1,18 @@
 Feature: This feature file hold automation excercise functionality
 
 #valid
-#Scenario: To validate login functionality with valid credentails
-#Given The user launch application URL "https://automationexercise.com/login"
-#When The user enters username "nitingupta3005@gmail.com" and password "Smart@123"
-#When The user submit the login credentails
-#Then The User validates login successfully
+Scenario: To validate login functionality with valid credentails
+Given The user launch application URL "https://automationexercise.com/login"
+When The user enters username "nitingupta3005@gmail.com" and password "Smart@123"
+When The user submit the login credentails
+Then The User validates login successfully
 #
 #invalid
-#Scenario: To validate login functionality with Invalid credentails
-#Given The user launch application URL "https://automationexercise.com/login"
-#When The user enters username "nitingupta300.com" and password "Smart@123"
-#When The user submit the login credentails
-#Then The User validates login successfully
+Scenario: To validate login functionality with Invalid credentails
+Given The user launch application URL "https://automationexercise.com/login"
+When The user enters username "nitingupta300.com" and password "Smart@123"
+When The user submit the login credentails
+Then The User validates login successfully
 
 
 # run same test for multiple times with different sets of data

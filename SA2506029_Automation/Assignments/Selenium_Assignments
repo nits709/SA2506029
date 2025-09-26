@@ -143,6 +143,16 @@ POI Assignments
     		
 5. https://www.cricbuzz.com/live-cricket-scorecard/91778/aus-vs-ind-1st-test-india-tour-of-australia-2024-25		
 	1. Read web table data and write into excel.
+	
+	
+	Cucumber assignments
+	1. build test scenario to launch browser using before hooks
+	2. build test scenario to quit browser using AfterHooks
+	3. Before and After Hooks in separate class
+	
+	
+	
+	
    
    
    

@@ -1,8 +1,8 @@
 package WebdriverDemos;
 
 import java.io.File;
-import java.io.IOException;
 import java.time.Duration;
+
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.PageLoadStrategy;
 import org.openqa.selenium.TakesScreenshot;
@@ -12,15 +12,18 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.io.FileHandler;
 import org.openqa.selenium.safari.SafariDriver;
+import org.openqa.selenium.support.PageFactory;
+import org.testng.annotations.BeforeClass;
 
 public class baseFunction {
 
 	public static WebDriver driver = null;
-
+	
+	
 	
 	
 	public static void launchBrowser(String browserName) {
-
+		
 		if (browserName.equals("chrome")) {
 			ChromeOptions options = new ChromeOptions();
 			options.setPageLoadStrategy(PageLoadStrategy.NONE);
