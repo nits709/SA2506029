@@ -714,7 +714,63 @@ PageFactory class -- from selenium
 without pagefactory class
 
 
-	
+
+
+Framework   
+ ecommerce - 10 different project incompanies
+ payment 
+ 
+ Lakme company 
+ 
+ Shiseido
+ 	NARS
+ 	DrunkElelphant
+ 	EMEA
+ 	
+ 	Disney - VPN
+ 	addidas - VPN
+ 	
+ 	
+ 	Framework  | main/src/java | Key feature of any automation framework
+ 	1. resuable feature
+ 		a. Webdriver code
+ 		b. utility
+ 			1. database
+ 			2. excelfile
+ 			3. propertiesfile
+ 			4. Email provide - Gmail, Outlook, yahoomail
+ 		C. Configuration
+ 			 1. run test on browser
+ 			 2. Report - extent Report /allure report
+ 			 
+ 	2. AutomationExcercise - Login functionality | src/test/java 
+ 			testcases
+ 			TestData
+ 			testProperties
+ 			ExcelData
+ 			testng.xml
+ 			extentreport
+ 			
+ 		Disney			 		
+ 	
+
+	hybrid Framework
+	1. Create maven project
+	2. Dependencies into pom.xml
+	3. Automation login functionality of automatino excercise
+		cucumber + POM (page object model)
+	4. Utility
+		1. BaseFunction | Webdriver resuable function
+							 webdriver.get()
+							 sendkeys
+							 click
+							 getElement
+					
+			properties
+			report
+			screenshot				
+					
+							 	
     			
     			
     			
