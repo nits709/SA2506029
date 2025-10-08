@@ -17,11 +17,11 @@ public class GET_LISTUSERS {
 	public void getListOfUsers() {
 		
 		Response res =	RestAssured.get(appURL);
-		System.out.println("Response "+ res.asString());
+		System.out.println("Response "+ res.asString()); // java output
 		
 		System.out.println("*******************************************************");
 		
-		System.out.println("Response as Pretty "+ res.asPrettyString());
+		System.out.println("Response as Pretty "+ res.asPrettyString()); // json format
 		
 		System.out.println("status "+ res.statusCode()); //return status code.
 		

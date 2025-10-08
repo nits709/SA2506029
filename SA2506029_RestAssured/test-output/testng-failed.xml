@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="api_Methods.GetMultipleJsonValue">
+      <class name="httpMethodsBDD.GetRequestBDD">
         <methods>
-          <include name="getMultipleJsonValues"/>
+          <include name="getUserList"/>
         </methods>
-      </class> <!-- api_Methods.GetMultipleJsonValue -->
+      </class> <!-- httpMethodsBDD.GetRequestBDD -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

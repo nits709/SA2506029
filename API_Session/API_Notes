@@ -332,6 +332,39 @@ When(); - GET | POST | PUT | PATCH| DELETE
 Then(): status code, message (status message), json response, response payload, headers, cookies
 
 
+Sending payload in rest-assured
+1. Normal payload - String format in java
+2. By using HashMap<String,Object> data = new HashMap<String,Object>();
+3. POJO class - Plain Old java Object.
+
+
+Headers
+
+Cookies?
+
+Assginment
+from rest assured , hit google.co.in url
+print the cookies in console.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
