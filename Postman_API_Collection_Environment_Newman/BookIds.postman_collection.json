@@ -1,0 +1,253 @@
+{
+	"info": {
+		"_postman_id": "82c6a1a1-889a-4d90-b3f1-6187067d4dad",
+		"name": "BookIds",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "39085229",
+		"_collection_link": "https://sa2502049.postman.co/workspace/SA2506049~eb4be805-d834-4d1c-9595-2521d1b8032c/collection/39085229-82c6a1a1-889a-4d90-b3f1-6187067d4dad?action=share&source=collection_link&creator=39085229"
+	},
+	"item": [
+		{
+			"name": "GetBookingIds",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseURL}}/booking",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"booking"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreateNewBooking",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"    let res = pm.response.json();",
+							"    console.log(res.bookingid);",
+							"    let id = res.bookingid;",
+							"",
+							"    //below line of code generate environment variable in evironment",
+							"    pm.environment.set(\"bookingid\", id);"
+						],
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"firstname\" : \"Selenium\",\n    \"lastname\" : \"Tester\",\n    \"totalprice\" : 700,\n    \"depositpaid\" : true,\n    \"bookingdates\" : {\n        \"checkin\" : \"2025-10-04\",\n        \"checkout\" : \"2025-10-06\"\n    },\n    \"additionalneeds\" : \"Breakfast\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseURL}}/booking",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"booking"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetBookingDetail",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseURL}}/booking/{{bookingid}}",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"booking",
+						"{{bookingid}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateBookingDetails",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Cookie",
+						"value": "token=a04b9bfc6182fe0",
+						"type": "text"
+					},
+					{
+						"key": "Content-type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"firstname\" : \"Akash\",\n    \"lastname\" : \"Tester\",\n    \"totalprice\" : 400,\n    \"depositpaid\" : false,\n    \"bookingdates\" : {\n        \"checkin\" : \"2025-10-10\",\n        \"checkout\" : \"2025-10-11\"\n    },\n    \"additionalneeds\" : \"Not required\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseURL}}/booking/3449",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"booking",
+						"3449"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreateToken",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"let cookieToken = pm.response.json().token;",
+							"",
+							"console.log(cookieToken)",
+							"",
+							"pm.environment.set(\"tokenID\",cookieToken);"
+						],
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\" : \"admin\",\n    \"password\" : \"password123\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://restful-booker.herokuapp.com/auth",
+					"protocol": "https",
+					"host": [
+						"restful-booker",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"auth"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteBooking",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Cookie",
+						"value": "token={{tokenID}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://restful-booker.herokuapp.com/booking/{{bookingid}}",
+					"protocol": "https",
+					"host": [
+						"restful-booker",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"booking",
+						"{{bookingid}}"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"requests": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"requests": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "baseURL",
+			"value": ""
+		}
+	]
+}

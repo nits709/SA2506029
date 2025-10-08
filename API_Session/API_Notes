@@ -1,0 +1,413 @@
+What is an API?
+
+Application programming interface,that helps to communicate 2 or more ends (technologies, servers, hardware devices etc...) despite of uses different technologies.
+
+Types of API's
+
+1. Open API's (Public APIs)
+	1. Available for any one to use with or with out registeration.
+		Exmaple : Map, GitHub Api
+		Used foe there data and services
+
+2. Internal API's (Private APIs)
+   1. Used only inside the company/orgnization
+      Exmaple : HR system API to fetch employee Data
+      Secure, not exposed data to outside world
+
+3. Partner APIs
+	    1. Shared data with selected business partner.
+	    Example: flight booking, Train ticket booking
+	    Controlled access.
+
+4. Composite APIs
+		Combine multiple API to make one call
+		Example: One API that checks order info + payment info + shipping details
+
+
+Categories of APIs
+	
+	1. Web APIs - Amazon, Whatsapp, Facebook
+	2. Library API - JDK, Selenium Jar, Rest-assured
+	3. Operating System API - calcutor, powerpoint MSoffice
+	4. HardWare API - USB, Microphone, headSet, earpod
+
+
+Developer develops the API - Dev Environment --> API -- QA Environment --> Manual / Automation on API's
+Staging environment --> Production Environment 
+Will hosted on the internet API --> WebServices.
+
+
+ALL WebServices are API's
+Not all API's are webservices
+
+
+API's runs over protocol - set of rules
+
+HTTP or HTTPS	 - Security
+
+https://www.makemytrip.com/
+
+
+CRUD Operations
+
+C - create - POST
+R - read - get | When i want to retrive any information, this would consider the safest 		             request amongs all
+U- Update
+D- delete
+
+
+1. Open browser
+2. Navigate google.com
+3. Create Gmail account (adding a new resources in the database)
+4. Update the resources
+		PUT - Update the entire resources
+		PATCH - partial update of resources
+5. Delete -delete the resources (you cannot rollback)	
+
+
+
+
+
+API- Request
+1. Method Type
+2. Request - Payload (Data)
+3. Header, Cookies (Extra/ additional information about your request)
+4. Address - URL | EndPoint
+
+==================================================================
+
+API- Response
+1. Status Code - 100, 200, 300, 400, 500
+	100 - 199 - Infromation about request - inprogress/ continue.
+	200-299 = Sucess! 200: Ok - Sucess, 201 - Created
+	300-399 = redirection | go somewhere else
+	400-499 = Client Errors
+	500-599 = Server Errors
+2. Response Message
+3. Response payload (Data)
+4. Headers, Cookies
+
+ 
+ What is an EndPoint?
+
+ URI: Unifrom resources identifier
+ URL: Uniform resources locator
+ URN: Unifrom resources Name
+
+
+						https://reqres.in/api/users
+						https://reqres.in/api/users/2
+						https://restful-booker.herokuapp.com/booking/:id
+						https://restful-booker.herokuapp.com/booking
+
+
+ 1. Schema - http/ https
+ 2. Host - reqres.in/api
+ 3. Path Parameter - users     (HR/Employee)
+ 4. QueryParameter - id=2 or id=4 (resources column name)
+
+ URI - https://reqres.in/api/users/2
+ URL - reqres.in/api/users/2
+ URN - users/2
+
+ GET  - URI
+ POST - URI
+ PATCH - URI
+ PUT - URI
+ DELETE - URI
+
+
+ 		Types of WebServices.
+ 		1. REST - represtational state transfer 
+ 		2. SOAP - simple object access protocol
+
+
+ 		Features -   | REST       					|			 SOAP | 
+
+ 		Protocal	| HTTP/ HTTPS |  						HTTP | SMTP | 
+ 		Methods     | GET|POST|PUT|PATCH|DETELE     |  		POST  |
+ 		DATAformat  | JSON, XML						|        XML |
+ 		Performance | FASTER. Light                 |               Slower in response|
+ 		Use-Case 	| Web, Mobile-API			    | Enterprise Application |  
+
+
+ 			GraphQL - facebook
+
+ 				API Verification in Postman.
+
+ 				How to create variable in JAVA
+
+		 	1. String name = "Selenium WebDriver";
+		 	2. int
+		 	3. float
+		 	4. boolean
+
+
+		 	javascripts - variable can be created by using keyword
+		 			
+		 			1. var
+		 			2. let
+		 			3. const	
+
+		 	let name = "postman";	
+		 	let x = 100;
+		 	const flag = true;
+		 	let f = 30.0;
+
+
+			//functions
+
+			function add(){
+			let result = a + b;
+			}
+
+
+			function without name.
+
+	let mul=	function(n1,n2){
+			let multiple = n1 *n2;
+			console.log("value of 2 number "+ mulitple);
+			}
+
+		in js function type
+		1. function with name
+		2. function without name
+		3. arrow function	
+
+
+		pm.test("testcaseName","testscript logic")
+
+
+
+		variables
+		1. Environment - DEV, QA - STG, PROD, UAT
+		2. global - 2F authentication 
+		3. collection - 
+
+		QA environment
+		1. Smoke - collection - API
+		2. Sanity - Collection - API
+		3. Regression - collection- API
+
+
+		// variable in js
+let num = 100;
+
+console.log("Value of num variable "+ num);
+
+let name = "postman";
+
+console.log("Value of name variable "+ name);
+
+
+//functions in js
+
+function add(){ // function declarations
+    let result = 20 + 30 ;
+    console.log("addition of two number "+ result) 
+}
+
+add();  // function calling
+
+
+function addWithpara(a,b){
+    console.log(a+b);
+}
+
+addWithpara(40, 20); // function calls
+
+        //functions without name
+        let mul =   function(n1,n2){
+			        let multiple = n1*n2;
+			        console.log("value of 2 number "+ multiple);
+			        }
+
+        mul(20,30);
+
+    //arrow function
+        const sub= (a,b)=>{
+                console.log("substration of 2 number " + (a - b));
+            }
+
+            sub(50,20);// calling function
+
+
+// write test to validate status code
+// postman uses BDD approach
+// pm.response
+pm.test("testcase to validate api status code",function(){
+    pm.response.to.have.status(200);
+})
+
+//chai library in js to validate/ assertions
+pm.test("testcase to validate status code using chai library", function(){
+    pm.expect(pm.response.code).to.eql(200);
+})
+
+pm.test("testcases to validate status message",function(){
+    pm.expect(pm.response.status).to.eql("OK");
+})
+
+pm.test("testcase to validate responseTime",function(){
+    pm.expect(pm.response.responseTime).to.be.below(29); 
+})
+
+  let res = pm.response.json();
+
+  console.log(res)
+ 
+
+==================================================
+create environment variable code
+let res = pm.response.json();
+console.log(res.bookingid)
+
+let id = res.bookingid;
+
+pm.environment.set("BookId1",id)
+
+
+
+==============================================
+JSON Path
+
+// get the entire response body from API (response payload)
+//pm.response.json
+
+  let res = pm.response.json();
+  console.log(res) ;     
+
+  //res.per_page
+  //res.page
+  //res.total_pages
+  //res.data[0].firstname
+  //res.data[4].last_name
+  //res.meta.feature.0
+  //res.meta.feature.1
+  //res.meta.feature.2
+  //res.meta.feature.3
+
+
+  pm.test("validate json path of firstname", function(){
+    pm.expect(res.data[0].first_name).to.eql("George");
+  })
+
+
+=========================================================================================
+
+We need to download and install node.js 
+to check node is installed or not 
+open cmd in windows and terminal in mac laptop
+
+Write below command to check node and npm versions in windows
+
+1. node  -v - this will return version number
+2. npm -version this will return version number
+
+for html report in postman collection need to install newman
+to install newman hit below commands
+3. npm install -g newman
+
+Steps to generate html report via newman
+1. export collection
+2. export environment if collection uses
+3. Go to location where exported collection and environment
+	open terminal or cmd
+	newman run collection with extension(fully qualified name) enviornment with extension
+	(fully qualified name) -r htmlextra
+
+What is rest Assured?
+1. RA is java based library which used by QA automation tester and developed to ensure
+API's are working correctly.
+
+
+
+RestAssured using BDD function.
+
+Given pre-condition
+given(): headers, cookies, path, query parameter, playload(resources)/Authentication.
+
+When(); - GET | POST | PUT | PATCH| DELETE
+
+Then(): status code, message (status message), json response, response payload, headers, cookies
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
