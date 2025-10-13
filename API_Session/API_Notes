@@ -348,6 +348,13 @@ print the cookies in console.
 
 
 
+Types of Authentication | Fiddler (listen API's Request)
+1. Basic Authentication.
+2. digestive Authentication
+3. Bearer token Authentication
+4. Auth Authentication - 2.0 (will take it in next session, waiting to get open source API for demo)
+
+
 
 
 
