@@ -1,0 +1,151 @@
+
+ 	What is Authentication in an API?
+	Authentication simply means “proving who you are” before you’re allowed to access something.
+	When two systems communicate through an API, the receiving system wants to make sure:
+	“Is this request really coming from someone who’s allowed to do this?”
+	That process — of checking identity — is called Authentication.
+
+
+Real-life analogy:
+	Imagine you’re trying to enter a secure office building.
+	At the front desk:
+	The guard asks for your ID card (to verify who you are).
+	If your name is on the approved list, you’re allowed in.
+	If not, access is denied.
+	That’s authentication — proving your identity before entry.
+	In APIs, it works the same way:
+	The system checks your “digital ID” before letting you use its data or services.
+
+
+
+
+
+first download, android studio
+Google > Android Studio > download Android Studio Meerkat Feature Drop
+> select check box  > click on download
+
+
+Open Command prompt
+1. node.js download
+2. node -v
+
+3. now to download Appium from cmd
+	a. npm install -g appium
+	b. where appium
+	c. appium to start appium server.
+	d. stop control+c
+	e. appium driver list
+	f. appium driver install uiautomator2
+
+4. go to google and download appium inspector.
+	a. hit this URL https://github.com/appium/appium-inspector/releases/tag/v2025.8.2
+	b. scroll down Appium-Inspector-2025.8.2-win.exe
+
+5. Start install Android Studio
+ 	a. click on next
+ 	b. click on next
+ 	c. click on next
+ 	d. click on install (wait for next button get enabled)
+ 	e. click on next then click on finish
+ 	f. help improve Android studio screen coming... click on dont send
+ 	g. Click on Next
+ 	h. go with standard> click on next
+ 	i. getting verify setting window > click on next
+ 	j. License Agreement window > accept license > next
+ 	k. next window may take hour to complete. 
+
+
+ Then starts explaining what is Mobile testing.
+ 
+ What is Mobile testing ?
+Mobile testing refers to test the mobile application (apps - facebook,icici, amazon, flipkart) on various devices (android devices, IOS devices) and platform android and iOS to ensure functionality working as expected to provide smooth and bug free experience (USER).
+
+
+Testing Conduct on mobile
+   1. Functional
+   2. Usability | compatibility
+   3. Accessibility
+   4. Performance
+   5. Security
+   6. Configuration  | Interupts testing
+   7. Hardware testing.
+
+
+   Types of mobile testing
+   1. Manually
+   2. Automation.
+
+
+1. Type of Application
+   a. Native apps
+   b. Mobile WebApps
+   c. Hybrid Application
+   d. Progressive Web Apps (PWAs)
+
+
+Native apps
+	What: Built specifically for one platform (iPhone/iPad = iOS, or Android).
+	Good for: Best speed, looks, and access to phone features (camera, GPS).
+	Downside: Need to build two versions if you want iOS + Android.
+
+Web apps
+	What: A website that works on your phone (runs inside the browser).
+	Good for: Works everywhere instantly — no download.
+	Downside: Limited access to device features and offline use.
+
+Hybrid apps
+	What: Web apps wrapped inside a native container so they can be installed like an app.
+	Analogy: A web store put inside a mall kiosk — easier to deploy, but not as polished as a custom shop.
+	Good for: Faster to build for multiple platforms.
+	Downside: Can be slower or less “native” feeling.
+	
+	Developers build the app with web languages (HTML, CSS, JavaScript) — the same tools used to build websites.
+
+	That web code is then wrapped by a small native program (the shell) so the app can be installed on phones.
+
+
+Progressive Web Apps (PWAs)
+	What: Advanced web apps that can be installed to the home screen and work offline.
+	Analogy: A website that behaves like a light-weight app.
+	Good for: No app-store upload, fast to update, reaches everyone.
+	Downside: Still limited access to some phone features on some devices.
+
+Cross-platform (React Native, Flutter, etc.)
+	What: One codebase that builds native-like apps for iOS and Android.
+	Analogy: A tailored suit pattern that can be adjusted to fit two people well.
+	Good for: Good balance of speed, look, and development cost.
+	Downside: Some platform-specific features can be trickier.	
+
+
+How to create project in android studio
+1. Click on newProject
+2. Select empty Activity
+3. Click on finish with default setting to create project
+4. once project created, on right side 3rd option > click on device manager
+5. Click on play button next to vitural type
+6. configure envronment variable of android studio
+	a. go to drive C
+	b. user folder (login)
+	c. App data (if not visible that means folder is hidden, check show > hidden items option under view to visible)
+	d. local > android > sdk (copy this path) paste in Notepad.
+	e. go to this PC > right click on it 
+	f. click on show more options
+	g. click on properties
+	h. go to Advanced system setting > Environment variable 
+	i. Create system variable - ANDROID_HOME and set the path
+	J. look for path variable > Edit it
+	k. configure new below variables
+			1. %ANDROID_HOME%\platform-tools
+			2. %ANDROID_HOME%\tools
+			3. %ANDROID_HOME%\tools\bin 
+	l.save it and go to sdk folder > open cmd on this location
+	m. adb devices
+
+
+{
+  "platformName": "Android",
+  "appium:automationName": "uiautomator2",
+  "appium:deviceName": "pixel_9_pro_xl",
+  "appium:udid": "emulator-5554"
+}
+
