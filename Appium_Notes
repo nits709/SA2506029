@@ -149,3 +149,72 @@ How to create project in android studio
   "appium:udid": "emulator-5554"
 }
 
+TestBed = TestEnvironment
+HardWare
+Software - Operating system, browser, databases and any devices comes under support of network
+network configuration
+virtual devices - emulator/ simulator - saucelab / browserstack
+
+devicename
+device OS
+device UDID
+supply path of apk
+
+DesiredCapabilities
+
+below dependencies to be copied for appium
+1. 
+<dependency>
+    <groupId>io.appium</groupId>
+    <artifactId>java-client</artifactId>
+    <version>10.0.0</version>
+</dependency>
+
+2. 
+<dependency>
+    <groupId>org.testng</groupId>
+    <artifactId>testng</artifactId>
+    <version>7.10.2</version>
+    <scope>test</scope>
+</dependency>
+
+3. optional (Webdriver)
+<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+<dependency>
+    <groupId>org.seleniumhq.selenium</groupId>
+    <artifactId>selenium-java</artifactId>
+    <version>4.36.0</version>
+</dependency>
+
+
+
+
+
+
+To get the UDID follow below steps (window laptop)
+pre-condition of below steps
+1. go to android studio or connect real devices in laptop or system
+2. ensure devices or emulator up and running
+
+Open terminal / cmd
+1. go to sdk location of android and look for platform-tools folder
+2. open that folder then click on address of the folder (click on top) then type cmd and hit enter
+3. this will open cmd at same location.
+4. adb devices in response return UDID of emulator or realdevices
+
+2. start Appium server.
+1. open cmd
+2. appium
+
+
+in appium version 1, we use desiredcapabilities clss to create device configuration.
+Appium v 2.0
+UiAutomator2Options
+
+Locator strategy in Appium
+total of 5 way to get the element address on application layout
+1. Accessibility ID
+2. ID --> resource-id
+3. class name
+4. xpath
+5. ui automator 2
