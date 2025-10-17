@@ -218,3 +218,25 @@ total of 5 way to get the element address on application layout
 3. class name
 4. xpath
 5. ui automator 2
+
+
+
+WebDriver extends Javascript 
+
+
+
+AppiumDriver extends RemoteDriver implements webdriver
+
+
+
+
+
+
+
+
+
+
+
+
+
+
