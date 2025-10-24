@@ -58,6 +58,7 @@ public class testMobileLocators {
 			ele3.click();
 			
 			
+			
 			Thread.sleep(2000);
 			
 			ap.navigate().back();

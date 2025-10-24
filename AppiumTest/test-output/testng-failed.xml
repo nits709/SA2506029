@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="appiumConnectionSetups.createAppiumConnectionDC">
+      <class name="AndroidDevice_Actions.GetAppPerformanceData">
         <methods>
-          <include name="setupAppiumConnection"/>
+          <include name="getAppPerData"/>
         </methods>
-      </class> <!-- appiumConnectionSetups.createAppiumConnectionDC -->
+      </class> <!-- AndroidDevice_Actions.GetAppPerformanceData -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
