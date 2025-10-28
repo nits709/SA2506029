@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-10-10T21:05:11 IST" name="Default suite" finished-at="2025-10-10T21:05:14 IST" duration-ms="3164">
+  <suite started-at="2025-10-27T19:48:00 IST" name="Default suite" finished-at="2025-10-27T19:48:02 IST" duration-ms="2670">
     <groups>
     </groups>
-    <test started-at="2025-10-10T21:05:11 IST" name="Default test" finished-at="2025-10-10T21:05:14 IST" duration-ms="3164">
-      <class name="AuthenticationType.BearerTokenAuthentication">
-        <test-method signature="getGitHubRepoInfo()[pri:0, instance:AuthenticationType.BearerTokenAuthentication@dbf57b3]" started-at="2025-10-10T21:05:11 IST" name="getGitHubRepoInfo" finished-at="2025-10-10T21:05:14 IST" duration-ms="3095" status="PASS">
+    <test started-at="2025-10-27T19:48:00 IST" name="Default test" finished-at="2025-10-27T19:48:02 IST" duration-ms="2670">
+      <class name="api_Methods.auth2practices">
+        <test-method signature="getAuthCode()[pri:0, instance:api_Methods.auth2practices@dbf57b3]" started-at="2025-10-27T19:48:00 IST" name="getAuthCode" finished-at="2025-10-27T19:48:02 IST" duration-ms="2620" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- getGitHubRepoInfo -->
-      </class> <!-- AuthenticationType.BearerTokenAuthentication -->
+        </test-method> <!-- getAuthCode -->
+      </class> <!-- api_Methods.auth2practices -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

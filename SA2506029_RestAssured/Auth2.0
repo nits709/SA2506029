@@ -1,0 +1,44 @@
+
+
+1. First user needs to create an Application
+	1. ClientID.
+	2. Client Secret.
+	3. Auth Code
+	
+	
+in order to perform Auth2.0  follow below steps
+1. User to create an account in Github repo
+2. should have 1-2 repo in the account to get response.
+3. User create an application in github
+4. goto github profile > setting > developer setting on left
+5. Click on OAuth apps on left side
+6. Create an application >  New OAuth app
+		a. Provide Application Name - SA2506029_API
+		b. Home page URL - this could be any URL - https://www.facebook.com/
+		c. Application description (Optional)
+		d. Authorization Call back URL - https://www.facebook.com/
+		e. Click on Register application button.
+		f. application created successfully.
+7. Generate Client ID and Client Secret
+		a. Client ID will be there on page (copy and backup)
+		b. Click on  "Generate a new client secret button"	 to generate client secret
+		c. most important --> require to copy that client secret and backup
+		d. click on update Application button (mandatory)
+
+8. to get AuthCode, below URL to be hit over browser.
+	URL ---> https://github.com/login/oauth/authorize?client_id=Ov23liyug4x21QB1n8Ar
+9. User required to authorized above request to get AuthCode, user redirected to URL and that one would have auth code.
+
+10. step to get Auth2.0
+	a. Open Postman
+	b. hit post request in postman - https://github.com/login/oauth/access_token?client_id=asdadsdadada21312313231&client_secret=123456789trewdfgh&code=1234567890876543
+	c. please use client_id, client_secret_auth_code respective to the application.
+	d. as output of step b --> recevied OAuth2.0 token (copy and backup)
+11. get github data as reposnce using Auth2.0 token in get request.
+		a. hit get request in Postman -> https://api.github.com/user/repos	
+		b. supply bearer Token under Authorization tab
+		c. user should get response as github repo detail.
+		 	
+	
+	
+	
